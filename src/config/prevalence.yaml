@@ -27,3 +27,4 @@ impact:
 
 sources:
   dap_top_pages_endpoint: "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data"
+  analytics_public_endpoint: "https://analytics.usa.gov/data/live/national-science-foundation/top-pages-7-days.json"
