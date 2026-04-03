@@ -63,7 +63,7 @@ function headRequest(urlString, timeoutMs = 5000) {
         port: parsed.port ? Number(parsed.port) : undefined,
         path: parsed.pathname + parsed.search,
         headers: {
-          'User-Agent': 'daily-dap-accessibility-statement-checker/1.0'
+          'User-Agent': 'daily-nsf-accessibility-statement-checker/1.0'
         }
       };
       const req = client.request(options, (res) => {

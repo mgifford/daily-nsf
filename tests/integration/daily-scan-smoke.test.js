@@ -10,7 +10,7 @@ function fixturePath(name) {
 }
 
 async function createTempWorkspace() {
-  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-dap-smoke-'));
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-nsf-smoke-'));
   await fs.mkdir(path.join(root, 'docs', 'reports', 'daily'), { recursive: true });
   await fs.writeFile(
     path.join(root, 'docs', 'reports', 'history.json'),
@@ -142,7 +142,7 @@ test('runDailyScan mock mode without outputRoot writes to temp directory', async
   assert.equal(summary.status, 'success');
 
   // Files should be written to the temp directory, not the repo docs directory
-  const expectedTempDir = path.join(os.default.tmpdir(), 'daily-dap-mock');
+  const expectedTempDir = path.join(os.default.tmpdir(), 'daily-nsf-mock');
   assert.ok(
     summary.paths.report_json_path.startsWith(expectedTempDir),
     `report.json should be written to temp dir (${expectedTempDir}), got: ${summary.paths.report_json_path}`

@@ -134,7 +134,7 @@ test('snapshot writer and artifact manifest stay in sync', async () => {
     historyIndex
   });
 
-  const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-dap-wp04-'));
+  const tempRoot = await fs.mkdtemp(path.join(os.tmpdir(), 'daily-nsf-wp04-'));
   await writeCommittedSnapshot({
     repoRoot: tempRoot,
     report,

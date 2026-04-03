@@ -32,11 +32,11 @@ export function renderFailurePage(failureReport) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily DAP Failure ${escapeHtml(failureReport.run_date)}</title>
+  <title>Daily NSF Failure ${escapeHtml(failureReport.run_date)}</title>
 </head>
 <body>
   <header role="banner">
-    <h1>Daily DAP Run Failure</h1>
+    <h1>Daily NSF Run Failure</h1>
   </header>
   <main id="main-content">
     <p>Run date: ${escapeHtml(failureReport.run_date)}</p>

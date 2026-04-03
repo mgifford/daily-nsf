@@ -1,4 +1,4 @@
-# Quickstart: Daily DAP Quality Benchmarking
+# Quickstart: Daily NSF Quality Benchmarking
 
 ## 1. Configure run settings
 

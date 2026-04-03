@@ -1,4 +1,4 @@
-name: Daily DAP Scan
+name: Daily NSF Scan
 
 on:
   schedule:
@@ -40,7 +40,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily-dap-scan
+  group: daily-nsf-scan
   cancel-in-progress: false
 
 jobs:
@@ -95,7 +95,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: daily-dap-run-artifacts
+          name: daily-nsf-run-artifacts
           path: |
             artifacts/
             docs/reports/daily/
@@ -118,7 +118,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/reports docs/404.html
-          git commit -m "chore: publish daily DAP report snapshots"
+          git commit -m "chore: publish daily NSF report snapshots"
           # Rebase onto latest main to prevent non-fast-forward rejection when
           # a concurrent or sequential run (e.g. scheduled + manual dispatch)
           # has already pushed new commits to main since this job checked out.

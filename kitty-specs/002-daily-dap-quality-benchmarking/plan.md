@@ -1,4 +1,4 @@
-# Implementation Plan: Daily DAP Quality Benchmarking
+# Implementation Plan: Daily NSF Quality Benchmarking
 
 **Branch**: `002-daily-dap-quality-benchmarking` | **Date**: 2026-02-21 | **Spec**: `/workspaces/daily-dap/kitty-specs/002-daily-dap-quality-benchmarking/spec.md`
 **Input**: Feature specification from `/kitty-specs/002-daily-dap-quality-benchmarking/spec.md`

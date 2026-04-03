@@ -27,11 +27,11 @@ jobs:
         uses: github/accessibility-scanner@v3
         with:
           urls: |
-            https://mgifford.github.io/daily-dap/
-            https://mgifford.github.io/daily-dap/reports/
-          repository: mgifford/daily-dap
+            https://mgifford.github.io/daily-nsf/
+            https://mgifford.github.io/daily-nsf/reports/
+          repository: mgifford/daily-nsf
           token: ${{ github.token }}
-          cache_key: daily-dap-github-pages
+          cache_key: daily-nsf-github-pages
           skip_copilot_assignment: true
 
       - name: Skip scan (open issues exist)

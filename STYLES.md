@@ -40,7 +40,7 @@ project a unified whole for every reader, regardless of which surface they encou
 We design for the reader, not the institution. The goal is to reduce cognitive load
 through consistency, clarity, and radical accessibility.
 
-CivicActions advances the greater good through technology built for humans. Daily DAP
+CivicActions advances the greater good through technology built for humans. Daily NSF
 reflects these core brand values:
 
 - **Confidence**: we have the experience and drive to solve hard problems.
