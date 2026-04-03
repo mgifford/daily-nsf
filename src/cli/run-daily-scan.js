@@ -488,7 +488,7 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
     let resolvedEndpoint = dapEndpoint;
     if (!args.sourceFile && dapEndpoint?.includes('api.gsa.gov') && !dapApiKey) {
       if (analyticsPublicEndpoint) {
-        logProgress('INITIALIZATION', 'DAP_API_KEY not set; falling back to public analytics.usa.gov endpoint', { endpoint: analyticsPublicEndpoint });
+        logProgress('INITIALIZATION', 'DAP_API_KEY not set; falling back to public analytics.usa.gov endpoint (rolling 7-day window, no auth required)', { endpoint: analyticsPublicEndpoint });
         resolvedEndpoint = analyticsPublicEndpoint;
       } else {
         throw new Error('DAP_API_KEY is required to fetch top pages from api.gsa.gov. Set repo secret DAP_API_KEY or pass --dap-api-key.');

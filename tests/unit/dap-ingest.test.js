@@ -84,5 +84,6 @@ test('getNormalizedTopPages supports analytics.usa.gov-style data via mock fetch
   assert.equal(result.records.length, 3);
   assert.equal(result.records[0].url, 'https://nsf.gov/');
   assert.equal(result.records[0].page_load_count, 5000);
+  assert.equal(typeof result.records[0].page_load_count, 'number');
   assert.equal(result.records[1].url, 'https://nsf.gov/about');
 });
