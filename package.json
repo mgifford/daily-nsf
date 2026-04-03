@@ -1,0 +1,26 @@
+{
+  "name": "daily-dap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dry-run": "node src/cli/run-daily-scan.js --dry-run",
+    "test": "node --test tests/unit/*.test.js tests/contract/*.test.js tests/integration/*.test.js",
+    "ci": "npm run test && node src/cli/run-daily-scan.js --dry-run --source-file tests/fixtures/dap-sample.json"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "chrome-launcher": "^1.2.0",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^29.0.1",
+    "lighthouse": "^13.0.3"
+  },
+  "devDependencies": {
+    "axe-core": "^4.11.2"
+  }
+}

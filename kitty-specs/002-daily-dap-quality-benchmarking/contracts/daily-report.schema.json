@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/daily-report.schema.json",
+  "title": "Daily DAP Quality Report",
+  "type": "object",
+  "required": [
+    "run_date",
+    "run_id",
+    "url_limit",
+    "url_counts",
+    "aggregate_scores",
+    "estimated_impact",
+    "trend_window_days",
+    "history_series"
+  ],
+  "properties": {
+    "run_date": { "type": "string", "format": "date" },
+    "run_id": { "type": "string" },
+    "url_limit": { "type": "integer", "minimum": 1 },
+    "url_counts": {
+      "type": "object",
+      "required": ["processed", "succeeded", "failed", "excluded"],
+      "properties": {
+        "processed": { "type": "integer", "minimum": 0 },
+        "succeeded": { "type": "integer", "minimum": 0 },
+        "failed": { "type": "integer", "minimum": 0 },
+        "excluded": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "aggregate_scores": {
+      "type": "object",
+      "required": ["performance", "accessibility", "best_practices", "seo", "pwa"],
+      "properties": {
+        "performance": { "type": "number", "minimum": 0, "maximum": 100 },
+        "accessibility": { "type": "number", "minimum": 0, "maximum": 100 },
+        "best_practices": { "type": "number", "minimum": 0, "maximum": 100 },
+        "seo": { "type": "number", "minimum": 0, "maximum": 100 },
+        "pwa": { "type": "number", "minimum": 0, "maximum": 100 }
+      },
+      "additionalProperties": false
+    },
+    "estimated_impact": {
+      "type": "object",
+      "required": ["traffic_window_mode", "affected_share_percent", "categories"],
+      "properties": {
+        "traffic_window_mode": {
+          "type": "string",
+          "enum": ["daily", "rolling_7d", "rolling_30d"]
+        },
+        "affected_share_percent": { "type": "number", "minimum": 0 },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "prevalence_rate", "estimated_impacted_users"],
+            "properties": {
+              "name": { "type": "string" },
+              "prevalence_rate": { "type": "number", "minimum": 0 },
+              "estimated_impacted_users": { "type": "number", "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "trend_window_days": { "type": "integer", "minimum": 1 },
+    "fpc_exclusion": {
+      "description": "Per-disability estimated excluded users derived from axe findings, page loads, and U.S. Census disability prevalence data.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["total_page_loads", "scanned_url_count", "categories", "census_vintage_year"],
+          "properties": {
+            "total_page_loads": { "type": "number", "minimum": 0 },
+            "scanned_url_count": { "type": "integer", "minimum": 0 },
+            "census_vintage_year": { "type": "integer", "minimum": 2020 },
+            "census_source": { "type": "string" },
+            "census_source_url": { "type": "string", "format": "uri" },
+            "categories": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "required": ["label", "prevalence_rate", "affected_page_loads", "estimated_excluded_users"],
+                "properties": {
+                  "label": { "type": "string" },
+                  "prevalence_rate": { "type": "number", "minimum": 0, "maximum": 1 },
+                  "estimated_population": { "type": "integer", "minimum": 0 },
+                  "affected_page_loads": { "type": "number", "minimum": 0 },
+                  "affected_share_percent": { "type": "number", "minimum": 0 },
+                  "estimated_excluded_users": { "type": "number", "minimum": 0 },
+                  "source_note": { "type": "string" }
+                }
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "history_series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "aggregate_scores"],
+        "properties": {
+          "date": { "type": "string", "format": "date" },
+          "aggregate_scores": { "$ref": "#/properties/aggregate_scores" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "code_quality_summary": {
+      "description": "Aggregated Lighthouse best-practices / code quality audit results across all successfully scanned URLs.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": [
+            "total_scanned",
+            "urls_with_deprecated_apis",
+            "urls_with_console_errors",
+            "urls_with_document_write",
+            "urls_with_vulnerable_libraries"
+          ],
+          "properties": {
+            "total_scanned": { "type": "integer", "minimum": 0 },
+            "urls_with_deprecated_apis": { "type": "integer", "minimum": 0 },
+            "urls_with_console_errors": { "type": "integer", "minimum": 0 },
+            "urls_with_document_write": { "type": "integer", "minimum": 0 },
+            "urls_with_vulnerable_libraries": { "type": "integer", "minimum": 0 },
+            "js_library_counts": { "type": "object" },
+            "vulnerable_library_counts": { "type": "object" },
+            "audit_urls": {
+              "type": "object",
+              "properties": {
+                "deprecated_apis": { "type": "array", "items": { "type": "string" } },
+                "console_errors": { "type": "array", "items": { "type": "string" } },
+                "document_write": { "type": "array", "items": { "type": "string" } },
+                "vulnerable_libraries": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "readability_summary": {
+      "description": "Aggregated content density metrics derived from Mozilla Readability extraction across all successfully scanned URLs.",
+      "type": "object",
+      "required": [
+        "url_count_with_metrics",
+        "url_count_low_density",
+        "mean_word_count",
+        "mean_words_per_mb",
+        "low_density_urls"
+      ],
+      "properties": {
+        "url_count_with_metrics": { "type": "integer", "minimum": 0 },
+        "url_count_low_density": { "type": "integer", "minimum": 0 },
+        "mean_word_count": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": 0 }] },
+        "mean_words_per_mb": { "oneOf": [{ "type": "null" }, { "type": "integer", "minimum": 0 }] },
+        "low_density_urls": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}
