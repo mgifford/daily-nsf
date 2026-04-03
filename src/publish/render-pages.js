@@ -3192,8 +3192,8 @@ export function renderDashboardPage({ latestReport, historyIndex = [], archiveUr
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily NSF - U.S. Government Website Quality Dashboard</title>
-  <meta name="description" content="Daily automated accessibility and performance benchmarks for the top 100 most-visited U.S. government websites, powered by Lighthouse and axe-core." />
+  <title>Daily NSF - NSF Website Quality Dashboard</title>
+  <meta name="description" content="Daily automated accessibility and performance benchmarks for the most-visited National Science Foundation (NSF) website pages, powered by Lighthouse and axe-core." />
   ${renderColorSchemeSetup()}
   ${renderSharedStyles()}
 </head>
@@ -3201,14 +3201,14 @@ export function renderDashboardPage({ latestReport, historyIndex = [], archiveUr
   ${renderDashboardHeader()}
   <main id="main-content" class="site-main">
     <div class="page-intro">
-      <h1 id="page-title">U.S. Government Website Quality Dashboard${renderAnchorLink('page-title', 'U.S. Government Website Quality Dashboard')}</h1>
-      <p>Daily automated accessibility and performance scans of the top 100 most-visited U.S. government URLs, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
+      <h1 id="page-title">NSF Website Quality Dashboard${renderAnchorLink('page-title', 'NSF Website Quality Dashboard')}</h1>
+      <p>Daily automated accessibility and performance scans of the most-visited <a href="https://www.nsf.gov" target="_blank" rel="noreferrer">National Science Foundation (NSF)</a> website pages, powered by <a href="https://developer.chrome.com/docs/lighthouse/" target="_blank" rel="noreferrer">Google Lighthouse</a> and <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>.</p>
     </div>
 
     <section aria-labelledby="about-heading">
-      <h2 id="about-heading">What is DAP?${renderAnchorLink('about-heading', 'What is DAP?')}</h2>
-      <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that tracks website traffic across hundreds of participating federal agencies. It measures page views, visitor counts, and usage patterns for government websites, providing transparency into how the public engages with federal digital services.</p>
-      <p>This dashboard uses DAP traffic data to identify the <strong>most-visited government URLs</strong> and measures their quality daily. Each scan covers:</p>
+      <h2 id="about-heading">What is NSF?${renderAnchorLink('about-heading', 'What is NSF?')}</h2>
+      <p>The <a href="https://www.nsf.gov" target="_blank" rel="noreferrer"><strong>National Science Foundation (NSF)</strong></a> is an independent U.S. federal agency that supports fundamental research and education across all fields of science and engineering. NSF funds research at universities, colleges, and other institutions in all 50 states. Its mission is to advance the progress of science and promote the health, prosperity, and welfare of the nation.</p>
+      <p>This dashboard uses <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> traffic data to identify the <strong>most-visited NSF URLs</strong> and measures their quality daily. Each scan covers:</p>
       <ul>
         <li><strong>Accessibility</strong> &mdash; WCAG compliance measured by Lighthouse and axe-core (0&ndash;100, higher is better)</li>
         <li><strong>Performance</strong> &mdash; Page load speed including Core Web Vitals (0&ndash;100, higher is better)</li>

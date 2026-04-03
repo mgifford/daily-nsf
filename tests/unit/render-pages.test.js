@@ -1106,7 +1106,7 @@ test('renderDashboardPage includes anchor links on all section headings', () => 
 test('renderDashboardPage anchor links have accessible aria-labels', () => {
   const html = renderDashboardPage({ latestReport: minimalReport, historyIndex: [] });
 
-  assert.ok(html.includes('aria-label="Link to What is DAP?"'), 'About heading anchor should have descriptive aria-label');
+  assert.ok(html.includes('aria-label="Link to What is NSF?"'), 'About heading anchor should have descriptive aria-label');
   assert.ok(html.includes('aria-label="Link to Recent Reports"'), 'Recent Reports anchor should have descriptive aria-label');
   assert.ok(html.includes('aria-label="Link to Latest Scores (2026-03-09)"'), 'Latest Scores anchor should have descriptive aria-label');
 });
