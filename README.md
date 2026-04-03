@@ -129,6 +129,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Added content density (Words-per-Megabyte) feature: integrated @mozilla/readability and jsdom to extract main-content word counts, compute WpM efficiency ratio, flag low-density pages (<200 WpM), and render a Content Density section in daily reports |
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
 | Claude (Anthropic) | claude-sonnet-4.6 | Configured NSF-specific URL scanning: updated DAP endpoint to `national-science-foundation` agency endpoint, updated analytics.usa.gov reference to NSF-specific page, updated README to reflect NSF focus |
+| Claude (Anthropic) | claude-sonnet-4.6 | Cleared all prior scan history: removed all daily scan folders, zip archives, and reset history.json and index HTML files to empty state so fresh NSF scans can begin |
 
 ### Runtime operation
 
