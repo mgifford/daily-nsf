@@ -79,6 +79,7 @@ test('getNormalizedTopPages forwards limit as a query param to the API endpoint'
 
   const parsed = new URL(capturedUrl);
   assert.equal(parsed.searchParams.get('limit'), '250', 'limit should be forwarded as a query param');
+  assert.equal(parsed.searchParams.get('date'), '2026-04-02', 'date should be the day before sourceDate');
 });
 
 test('getNormalizedTopPages does not override a limit already present in the endpoint URL', async () => {
@@ -128,4 +129,45 @@ test('getNormalizedTopPages supports analytics.usa.gov-style data via mock fetch
   assert.equal(result.records[0].page_load_count, 5000);
   assert.equal(typeof result.records[0].page_load_count, 'number');
   assert.equal(result.records[1].url, 'https://nsf.gov/about');
+});
+
+test('getNormalizedTopPages does not override date if already in endpoint URL', async () => {
+  let capturedUrl = null;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://nsf.gov/', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data?date=2026-03-01',
+    limit: 50,
+    sourceDate: '2026-04-03',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('date'), '2026-03-01', 'pre-set date in URL should not be overridden');
+});
+
+test('getNormalizedTopPages omits date param when sourceDate is not provided', async () => {
+  let capturedUrl = null;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://nsf.gov/', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data',
+    limit: 50,
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.has('date'), false, 'date should not be added when sourceDate is absent');
 });
