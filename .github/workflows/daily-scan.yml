@@ -143,7 +143,7 @@ jobs:
           fi
 
       - name: Fail workflow on pipeline error
-        if: steps.pipeline.outputs.exit_code != '0'
+        if: always() && steps.pipeline.outputs.exit_code != '0'
         run: |
           echo "Pipeline command exited with code ${{ steps.pipeline.outputs.exit_code }}"
           exit 1

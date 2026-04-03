@@ -68,7 +68,7 @@ The `run-daily-scan.js` CLI supports the following options to control scan behav
 
 ### Data sources
 - `--source-file <path>` - Load URLs from a local JSON file instead of the DAP API
-- `--dap-api-key <key>` - DAP API key (can also use DAP_API_KEY environment variable)
+- `--dap-api-key <key>` - DAP API key (can also use `DAP_API_KEY` environment variable). Optional: if not provided, the scanner falls back to the public `analytics.usa.gov` endpoint (rolling 7-day window, no authentication required).
 - `--limit <number>` - Override URL limit from config
 - `--traffic-window <mode>` - Traffic window mode: daily, rolling_7d, or rolling_30d
 
@@ -135,6 +135,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Configured NSF-specific URL scanning: updated DAP endpoint to `national-science-foundation` agency endpoint, updated analytics.usa.gov reference to NSF-specific page, updated README to reflect NSF focus |
 | Claude (Anthropic) | claude-sonnet-4.6 | Updated all documentation and source references from "Daily DAP" to "Daily NSF": renamed project title, GitHub URLs, GitHub Pages URLs, workflow names, artifact names, User-Agent strings, and HTML page titles across all documentation, source, and test files |
 | Claude (Anthropic) | claude-sonnet-4.6 | Added references and links to analytics.usa.gov alongside DAP mentions in README.md, render-pages.js, and docs/reports/index.html to clarify that traffic data is published at analytics.usa.gov |
+| Claude (Anthropic) | claude-sonnet-4.6 | Reviewed failing CI job (run 23952174109): root cause was missing `DAP_API_KEY` secret causing a hard error instead of graceful fallback; verified fix from PR #12 (public endpoint fallback via `analytics_public_endpoint`); hardened `Fail workflow on pipeline error` step with `always()` guard; updated README to document optional `DAP_API_KEY` with public fallback |
 
 ### Runtime operation
 
