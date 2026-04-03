@@ -2397,8 +2397,8 @@ function renderDapContextSection() {
   return `
   <section aria-labelledby="dap-context-heading">
     <h2 id="dap-context-heading">About These Reports${renderAnchorLink('dap-context-heading', 'About These Reports')}</h2>
-    <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that collects website traffic data across participating federal agencies. DAP tracks page views, visitor counts, and usage patterns for hundreds of government websites, providing transparency into how the public engages with federal digital services.</p>
-    <p>This report measures the <strong>quality and accessibility</strong> of the top 100 most-visited U.S. government URLs as reported by DAP. Each day, Lighthouse scans are run against these URLs to measure:</p>
+    <p>The <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> is a U.S. government analytics service that collects website traffic data across participating federal agencies. DAP tracks page views, visitor counts, and usage patterns for hundreds of government websites, providing transparency into how the public engages with federal digital services. This data is published publicly at <a href="https://analytics.usa.gov/" target="_blank" rel="noreferrer">analytics.usa.gov</a>; NSF-specific traffic data is available at <a href="https://analytics.usa.gov/national-science-foundation" target="_blank" rel="noreferrer">analytics.usa.gov/national-science-foundation</a>.</p>
+    <p>This report measures the <strong>quality and accessibility</strong> of the top 100 most-visited U.S. government URLs as reported by DAP via <a href="https://analytics.usa.gov/" target="_blank" rel="noreferrer">analytics.usa.gov</a>. Each day, Lighthouse scans are run against these URLs to measure:</p>
     <ul>
       <li><strong>Performance</strong> - How fast pages load for users (scores 0-100, higher is better)</li>
       <li><strong>Accessibility</strong> - How well pages work for users with disabilities, following WCAG guidelines (scores 0-100, higher is better)</li>
@@ -2406,7 +2406,7 @@ function renderDapContextSection() {
       <li><strong>SEO</strong> - How well pages are optimized for search engines (scores 0-100, higher is better)</li>
     </ul>
     <p>Accessibility findings come from <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">axe-core</a>, the industry-standard accessibility testing engine embedded in Lighthouse. The <strong>axe findings</strong> surface specific WCAG violations such as missing alternative text, insufficient color contrast, and missing form labels that make government websites harder to use for people with disabilities.</p>
-    <p>Traffic data reflects daily visitor counts from DAP. URLs are ranked by page load count, ensuring the most-used government pages are prioritized for quality measurement.</p>
+    <p>Traffic data reflects daily visitor counts from DAP, published at <a href="https://analytics.usa.gov/national-science-foundation" target="_blank" rel="noreferrer">analytics.usa.gov/national-science-foundation</a>. URLs are ranked by page load count, ensuring the most-used government pages are prioritized for quality measurement.</p>
   </section>`;
 }
 
@@ -2997,7 +2997,7 @@ export function renderDailyReportPage(report) {
 
     <section aria-labelledby="top-urls-heading">
       <h2 id="top-urls-heading">Top URLs by Traffic (Scanned)${renderAnchorLink('top-urls-heading', 'Top URLs by Traffic (Scanned)')}</h2>
-      <p>Showing up to ${Math.min((report.top_urls ?? []).length, 100)} highest-traffic URLs from the latest available DAP day in this run.</p>
+      <p>Showing up to ${Math.min((report.top_urls ?? []).length, 100)} highest-traffic URLs from the latest available <a href="https://analytics.usa.gov/national-science-foundation" target="_blank" rel="noreferrer">analytics.usa.gov</a> day in this run.</p>
       <p><strong>Note:</strong> CWV = Core Web Vitals (measures page loading performance including Largest Contentful Paint, Cumulative Layout Shift, and Interaction to Next Paint). Lighthouse scores are 0&ndash;100 (higher is better). The <strong>Accessibility / Important</strong> column shows the Lighthouse accessibility score; if Critical or Serious axe findings exist the count appears after the slash (e.g.&nbsp;94&thinsp;/&thinsp;2). Click <strong>Details&nbsp;(N)</strong> to view WCAG accessibility findings for each URL.</p>
       <p><a href="axe-findings.json">Download axe findings JSON for this day</a> | <a href="axe-findings.csv">Download axe findings CSV for this day</a></p>
       ${wrapTable(`<table id="top-urls-table">
@@ -3208,7 +3208,7 @@ export function renderDashboardPage({ latestReport, historyIndex = [], archiveUr
     <section aria-labelledby="about-heading">
       <h2 id="about-heading">What is NSF?${renderAnchorLink('about-heading', 'What is NSF?')}</h2>
       <p>The <a href="https://www.nsf.gov" target="_blank" rel="noreferrer"><strong>National Science Foundation (NSF)</strong></a> is an independent U.S. federal agency that supports fundamental research and education across all fields of science and engineering. NSF funds research at universities, colleges, and other institutions in all 50 states. Its mission is to advance the progress of science and promote the health, prosperity, and welfare of the nation.</p>
-      <p>This dashboard uses <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> traffic data to identify the <strong>most-visited NSF URLs</strong> and measures their quality daily. Each scan covers:</p>
+      <p>This dashboard uses <a href="https://digital.gov/guides/dap" target="_blank" rel="noreferrer"><strong>Digital Analytics Program (DAP)</strong></a> traffic data (published at <a href="https://analytics.usa.gov/national-science-foundation" target="_blank" rel="noreferrer">analytics.usa.gov/national-science-foundation</a>) to identify the <strong>most-visited NSF URLs</strong> and measures their quality daily. Each scan covers:</p>
       <ul>
         <li><strong>Accessibility</strong> &mdash; WCAG compliance measured by Lighthouse and axe-core (0&ndash;100, higher is better)</li>
         <li><strong>Performance</strong> &mdash; Page load speed including Core Web Vitals (0&ndash;100, higher is better)</li>

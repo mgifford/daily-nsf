@@ -10,15 +10,19 @@ performance, or usability issues, impact is broad and immediate.
 
 This project provides a daily, repeatable quality signal by:
 
-- pulling top NSF pages from [DAP traffic data](https://analytics.usa.gov/national-science-foundation),
+- pulling top NSF pages from [analytics.usa.gov](https://analytics.usa.gov/national-science-foundation) (via the Digital Analytics Program),
 - scanning those pages with Lighthouse and ScanGov,
 - aggregating quality and impact metrics,
 - publishing dated static reports and trend history.
 
-## DAP and related resources
+## DAP and analytics.usa.gov
+
+Traffic data for this project comes from the [U.S. Federal Government Web Analytics](https://analytics.usa.gov/) program, published publicly at **[analytics.usa.gov](https://analytics.usa.gov/)**. NSF-specific page traffic is available at [analytics.usa.gov/national-science-foundation](https://analytics.usa.gov/national-science-foundation).
+
+The underlying program collecting this data is the [Digital Analytics Program (DAP)](https://digital.gov/guides/dap/), a shared analytics service that tracks page views, visitor counts, and usage patterns across participating federal agencies. DAP provides the data; analytics.usa.gov is the public-facing site where that data is surfaced.
 
 - Digital Analytics Program (DAP): https://digital.gov/guides/dap/
-- NSF Analytics overview: https://analytics.usa.gov/national-science-foundation
+- NSF analytics on analytics.usa.gov: https://analytics.usa.gov/national-science-foundation
 - DAP data endpoint configured in this repo: `src/config/prevalence.yaml`
 - ScanGov (accessibility scanner): https://github.com/GSA/scan-gov
 - Lighthouse: https://developer.chrome.com/docs/lighthouse/overview/
@@ -129,8 +133,8 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Added content density (Words-per-Megabyte) feature: integrated @mozilla/readability and jsdom to extract main-content word counts, compute WpM efficiency ratio, flag low-density pages (<200 WpM), and render a Content Density section in daily reports |
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
 | Claude (Anthropic) | claude-sonnet-4.6 | Configured NSF-specific URL scanning: updated DAP endpoint to `national-science-foundation` agency endpoint, updated analytics.usa.gov reference to NSF-specific page, updated README to reflect NSF focus |
-| Claude (Anthropic) | claude-sonnet-4.6 | Cleared all prior scan history: removed all daily scan folders, zip archives, and reset history.json and index HTML files to empty state so fresh NSF scans can begin |
 | Claude (Anthropic) | claude-sonnet-4.6 | Updated all documentation and source references from "Daily DAP" to "Daily NSF": renamed project title, GitHub URLs, GitHub Pages URLs, workflow names, artifact names, User-Agent strings, and HTML page titles across all documentation, source, and test files |
+| Claude (Anthropic) | claude-sonnet-4.6 | Added references and links to analytics.usa.gov alongside DAP mentions in README.md, render-pages.js, and docs/reports/index.html to clarify that traffic data is published at analytics.usa.gov |
 
 ### Runtime operation
 
