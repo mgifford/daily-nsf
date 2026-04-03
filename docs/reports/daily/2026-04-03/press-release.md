@@ -93,8 +93,8 @@ Aggregate Lighthouse scores across 11 scanned U.S. government websites today:
 | Metric | Score |
 |--------|-------|
 | Accessibility | 90.7 |
-| Performance | 49.8 |
-| Best Practices | 89.1 |
+| Performance | 51.7 |
+| Best Practices | 89.5 |
 | SEO | 89.7 |
 
 ## About This Report
