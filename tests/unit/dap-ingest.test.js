@@ -60,6 +60,48 @@ test('normalizeDapRecords filters out DAP placeholder entries like (other)', () 
   assert.equal(normalized.excluded.filter((e) => e.reason === 'placeholder_url').length, 2, 'Should exclude both placeholder entries');
 });
 
+test('getNormalizedTopPages forwards limit as a query param to the API endpoint', async () => {
+  let capturedUrl = null;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://nsf.gov/', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data',
+    limit: 250,
+    sourceDate: '2026-04-03',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('limit'), '250', 'limit should be forwarded as a query param');
+});
+
+test('getNormalizedTopPages does not override a limit already present in the endpoint URL', async () => {
+  let capturedUrl = null;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://nsf.gov/', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data?limit=50',
+    limit: 250,
+    sourceDate: '2026-04-03',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('limit'), '50', 'pre-set limit in the URL should not be overridden');
+});
+
 test('getNormalizedTopPages supports analytics.usa.gov-style data via mock fetch', async () => {
   const analyticsPayload = {
     data: [
