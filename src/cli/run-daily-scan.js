@@ -518,6 +518,16 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       createWarningEvent(warning.code, warning.message, { url: warning.url })
     );
 
+    if (normalized.records.length === 0 && !args.sourceFile) {
+      const emptyIngestWarning = createWarningEvent(
+        'empty_ingest',
+        'DAP API returned 0 records. The report will be empty. Verify the DAP_API_KEY secret is set and that the requested date has data published (data for the current day is often unavailable until the following day).',
+        {}
+      );
+      warningEvents.push(emptyIngestWarning);
+      logProgress('INGEST', 'WARNING: 0 records returned from DAP API. Report will be empty.');
+    }
+
     if (args.dryRun) {
       logProgress('DRY_RUN', 'Exiting in dry-run mode');
       const preview = {
