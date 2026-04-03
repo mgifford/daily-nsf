@@ -123,12 +123,6 @@ function buildDapEndpoint(endpoint, apiKey, { limit, after } = {}) {
   return url.toString();
 }
 
-function getPreviousDate(dateStr) {
-  const [year, month, day] = dateStr.split('-').map(Number);
-  const d = new Date(Date.UTC(year, month - 1, day - 1));
-  return d.toISOString().slice(0, 10);
-}
-
 export async function readDapRecordsFromFile(filePath) {
   const raw = await fs.readFile(filePath, 'utf-8');
   const payload = JSON.parse(raw);
@@ -147,8 +141,11 @@ export async function getNormalizedTopPages({
   if (sourceFile) {
     rawRecords = await readDapRecordsFromFile(sourceFile);
   } else {
-    const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
-    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit, after: queryDate });
+    // Do not pass an `after` date filter: the DAP site report returns a 30-day
+    // aggregate when no date range is specified, giving the full top-N URLs.
+    // Passing after=yesterday caused the API to return only today's (incomplete)
+    // records, which resulted in near-zero URL counts on every run.
+    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit });
     rawRecords = await fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
   }
 
