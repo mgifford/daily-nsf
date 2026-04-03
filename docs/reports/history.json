@@ -1,5 +1,13 @@
 {
-  "generated_at": "2026-04-03T14:28:24.051Z",
+  "generated_at": "2026-04-03T17:11:59.183Z",
   "lookback_days": 31,
-  "entries": []
+  "entries": [
+    {
+      "run_date": "2026-04-03",
+      "run_id": "run-2026-04-03-dd7e38e815",
+      "report_path": "daily/2026-04-03/report.json",
+      "page_path": "daily/2026-04-03/index.html",
+      "generated_at": "2026-04-03T17:11:59.183Z"
+    }
+  ]
 }
