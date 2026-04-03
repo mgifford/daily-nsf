@@ -490,8 +490,16 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       catch { return false; }
     })();
     const effectiveDapApiKey = dapApiKey ?? (isGsaApiEndpoint ? 'DEMO_KEY' : undefined);
-    if (!args.sourceFile && isGsaApiEndpoint && !dapApiKey) {
-      logProgress('INITIALIZATION', 'DAP_API_KEY not set; using DEMO_KEY for DAP API access (rate-limited to 30 req/hr - sufficient for daily scans; set DAP_API_KEY secret for production use)', { endpoint: dapEndpoint });
+    if (!args.sourceFile && isGsaApiEndpoint) {
+      let keySource;
+      if (args.dapApiKey) {
+        keySource = 'cli-arg';
+      } else if (dapApiKey) {
+        keySource = 'env';
+      } else {
+        keySource = 'DEMO_KEY (no DAP_API_KEY configured)';
+      }
+      logProgress('INITIALIZATION', `DAP API key source: ${keySource}`, { endpoint: dapEndpoint });
     }
 
     logStageStart('INGEST', { 

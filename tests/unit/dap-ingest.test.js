@@ -79,7 +79,7 @@ test('getNormalizedTopPages forwards limit as a query param to the API endpoint'
 
   const parsed = new URL(capturedUrl);
   assert.equal(parsed.searchParams.get('limit'), '250', 'limit should be forwarded as a query param');
-  assert.equal(parsed.searchParams.get('after'), '2026-04-02', 'after should be the day before sourceDate');
+  assert.equal(parsed.searchParams.has('after'), false, 'after should not be added automatically (causes empty results due to data lag)');
 });
 
 test('getNormalizedTopPages does not override a limit already present in the endpoint URL', async () => {
@@ -152,7 +152,7 @@ test('getNormalizedTopPages does not override after if already in endpoint URL',
   assert.equal(parsed.searchParams.get('after'), '2026-03-01', 'pre-set after in URL should not be overridden');
 });
 
-test('getNormalizedTopPages omits after param when sourceDate is not provided', async () => {
+test('getNormalizedTopPages omits after param (uses API default 30-day window)', async () => {
   let capturedUrl = null;
   const mockFetch = async (url) => {
     capturedUrl = url;
@@ -169,7 +169,7 @@ test('getNormalizedTopPages omits after param when sourceDate is not provided', 
   });
 
   const parsed = new URL(capturedUrl);
-  assert.equal(parsed.searchParams.has('after'), false, 'after should not be added when sourceDate is absent');
+  assert.equal(parsed.searchParams.has('after'), false, 'after should never be added automatically');
 });
 
 test('getNormalizedTopPages includes api_key in the DAP endpoint request when provided', async () => {
