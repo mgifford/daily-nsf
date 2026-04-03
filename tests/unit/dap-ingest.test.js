@@ -59,3 +59,30 @@ test('normalizeDapRecords filters out DAP placeholder entries like (other)', () 
   assert.equal(normalized.records[0].url, 'https://example.gov');
   assert.equal(normalized.excluded.filter((e) => e.reason === 'placeholder_url').length, 2, 'Should exclude both placeholder entries');
 });
+
+test('getNormalizedTopPages supports analytics.usa.gov-style data via mock fetch', async () => {
+  const analyticsPayload = {
+    data: [
+      { page: 'nsf.gov/', pageviews: '5000' },
+      { page: 'nsf.gov/about', pageviews: '3000' },
+      { page: 'nsf.gov/funding', pageviews: '1000' }
+    ]
+  };
+
+  const mockFetch = async () => ({
+    ok: true,
+    json: async () => analyticsPayload
+  });
+
+  const result = await getNormalizedTopPages({
+    endpoint: 'https://analytics.usa.gov/data/live/national-science-foundation/top-pages-7-days.json',
+    limit: 10,
+    sourceDate: '2026-04-03',
+    fetchImpl: mockFetch
+  });
+
+  assert.equal(result.records.length, 3);
+  assert.equal(result.records[0].url, 'https://nsf.gov/');
+  assert.equal(result.records[0].page_load_count, 5000);
+  assert.equal(result.records[1].url, 'https://nsf.gov/about');
+});
