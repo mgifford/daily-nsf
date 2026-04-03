@@ -130,7 +130,7 @@ function getEffectiveOutputRoot(args) {
     return path.resolve(args.outputRoot);
   }
   if (args.scanMode === 'mock') {
-    return path.join(os.tmpdir(), 'daily-dap-mock');
+    return path.join(os.tmpdir(), 'daily-nsf-mock');
   }
   return getDefaultRepoRoot();
 }

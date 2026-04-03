@@ -16,7 +16,7 @@
  * Accessibility Statement, which is tracked separately in
  * src/scanners/accessibility-statement-checker.js.
  *
- * This module was added to extend Daily DAP with the types of compliance
+ * This module was added to extend Daily NSF with the types of compliance
  * checks benchmarked by the performance.gov federal website performance
  * initiative (/cx/websiteperformance/), which is no longer actively maintained
  * but whose required-links criteria remain in force under the statutes and
@@ -101,7 +101,7 @@ function headRequest(urlString, timeoutMs = 5000) {
         port: parsed.port ? Number(parsed.port) : undefined,
         path: parsed.pathname + parsed.search,
         headers: {
-          'User-Agent': 'daily-dap/required-links-checker 1.0'
+          'User-Agent': 'daily-nsf/required-links-checker 1.0'
         }
       };
       const req = client.request(options, (res) => {

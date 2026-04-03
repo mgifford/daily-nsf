@@ -1,4 +1,4 @@
-# Data Model: Daily DAP Quality Benchmarking
+# Data Model: Daily NSF Quality Benchmarking
 
 ## Entity: DailyScanRun
 

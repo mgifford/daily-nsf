@@ -1,4 +1,4 @@
-# Feature Specification: Daily DAP Quality Benchmarking
+# Feature Specification: Daily NSF Quality Benchmarking
 
 **Feature Branch**: `002-daily-dap-quality-benchmarking`  
 **Created**: 2026-02-21  

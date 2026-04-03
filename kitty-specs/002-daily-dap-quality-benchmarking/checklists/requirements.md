@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Daily DAP Quality Benchmarking
+# Specification Quality Checklist: Daily NSF Quality Benchmarking
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2026-02-21  

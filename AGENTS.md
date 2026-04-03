@@ -1,4 +1,4 @@
-# Agent Instructions for Daily DAP
+# Agent Instructions for Daily NSF
 
 This project uses AI agents to maintain code quality and accessibility standards. For detailed agent rules and guidelines, see:
 

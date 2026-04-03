@@ -130,6 +130,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
 | Claude (Anthropic) | claude-sonnet-4.6 | Configured NSF-specific URL scanning: updated DAP endpoint to `national-science-foundation` agency endpoint, updated analytics.usa.gov reference to NSF-specific page, updated README to reflect NSF focus |
 | Claude (Anthropic) | claude-sonnet-4.6 | Cleared all prior scan history: removed all daily scan folders, zip archives, and reset history.json and index HTML files to empty state so fresh NSF scans can begin |
+| Claude (Anthropic) | claude-sonnet-4.6 | Updated all documentation and source references from "Daily DAP" to "Daily NSF": renamed project title, GitHub URLs, GitHub Pages URLs, workflow names, artifact names, User-Agent strings, and HTML page titles across all documentation, source, and test files |
 
 ### Runtime operation
 

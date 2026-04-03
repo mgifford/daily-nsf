@@ -120,7 +120,7 @@ export async function generateAccessibilitySummary(repoRoot, runDate) {
     lines.push('');
   }
 
-  lines.push(`[View full report](https://mgifford.github.io/daily-dap/docs/reports/daily/${reportDate}/index.html)`);
+  lines.push(`[View full report](https://mgifford.github.io/daily-nsf/docs/reports/daily/${reportDate}/index.html)`);
 
   return lines.join('\n');
 }

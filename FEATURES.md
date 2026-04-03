@@ -1,8 +1,8 @@
 # FEATURES.md
 
-> **A comprehensive catalog of all technical features built into Daily DAP, with an international adaptation guide.**
+> **A comprehensive catalog of all technical features built into Daily NSF, with an international adaptation guide.**
 
-Daily DAP is a daily quality benchmarking system for the most-visited U.S. government websites.
+Daily NSF is a daily quality benchmarking system for the most-visited U.S. government websites.
 It runs automated accessibility, performance, and usability scans, aggregates traffic-weighted
 impact metrics, and publishes dated static HTML reports with trend analysis.
 
@@ -35,7 +35,7 @@ This document is intended to help developers replicate this system for other cou
 ### Directory Structure
 
 ```
-daily-dap/
+daily-nsf/
 ├── src/                        # Application source code
 │   ├── cli/                    # Command-line entry points & utilities
 │   ├── config/                 # Configuration schema and parameter loading
@@ -744,8 +744,8 @@ Runs automated axe-core accessibility scanning against the published GitHub Page
 - **Push** to `main` that modifies anything under `docs/`
 
 **Scanned Pages:**
-- `https://mgifford.github.io/daily-dap/` (main dashboard)
-- `https://mgifford.github.io/daily-dap/docs/reports/` (reports index)
+- `https://mgifford.github.io/daily-nsf/` (main dashboard)
+- `https://mgifford.github.io/daily-nsf/docs/reports/` (reports index)
 
 **Requirements:** `GH_TOKEN` secret with `contents:write`, `issues:write`, `pull-requests:write` permissions.
 
@@ -964,12 +964,12 @@ Reports older than the dashboard display window (default: 14 days) are archived:
 
 ## 14. Adapting for Other Countries
 
-This section is a guide for teams wanting to replicate Daily DAP for a different country
+This section is a guide for teams wanting to replicate Daily NSF for a different country
 or jurisdiction. Each subsection identifies what to change and where.
 
 ### Traffic Data Source
 
-Daily DAP uses the U.S. Digital Analytics Program (DAP) API as its traffic data source.
+Daily NSF uses the U.S. Digital Analytics Program (DAP) API as its traffic data source.
 To replace it:
 
 1. **Implement an adapter** in `src/ingest/` (e.g., `src/ingest/my-country-source.js`)
@@ -1012,7 +1012,7 @@ The FPC exclusion and prevalence impact modules use U.S. Census data.
 
 ### Domain Registry Enrichment
 
-Daily DAP fetches the CISA `.gov` domain registry to display owning organization names.
+Daily NSF fetches the CISA `.gov` domain registry to display owning organization names.
 
 1. **Update** `src/data/dotgov-lookup.js` to fetch your country's government domain registry.
    - Replace the CISA CSV URL with your registry's endpoint.
@@ -1032,7 +1032,7 @@ Daily DAP fetches the CISA `.gov` domain registry to display owning organization
 
 ### Accessibility Standards Mapping
 
-Daily DAP maps findings to U.S. Section 508 Functional Performance Criteria (FPC).
+Daily NSF maps findings to U.S. Section 508 Functional Performance Criteria (FPC).
 For non-U.S. use:
 
 1. **Update** `src/data/axe-impact-rules.yaml` -- the `fpc_codes[]` field on each rule
@@ -1049,7 +1049,7 @@ For non-U.S. use:
 
 ### Scan Targets
 
-By default, Daily DAP scans the top 100 URLs from the DAP traffic report.
+By default, Daily NSF scans the top 100 URLs from the DAP traffic report.
 To use a different selection strategy:
 
 1. Change `url_limit` in `prevalence.yaml`.
@@ -1104,8 +1104,8 @@ No build step required.
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/mgifford/daily-dap.git
-cd daily-dap
+git clone https://github.com/mgifford/daily-nsf.git
+cd daily-nsf
 npm install
 
 # 2. Run the test suite
@@ -1120,5 +1120,5 @@ node src/cli/run-daily-scan.js --limit 10
 
 ---
 
-*This document was generated from a code audit of the Daily DAP repository. For the authoritative
+*This document was generated from a code audit of the Daily NSF repository. For the authoritative
 behavioral specification, see `kitty-specs/002-daily-dap-quality-benchmarking/`.*

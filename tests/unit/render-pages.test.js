@@ -1162,7 +1162,7 @@ test('renderArchiveIndexPage renders archive entries with download links', () =>
   ];
   const html = renderArchiveIndexPage({ entries, generatedAt: '2026-02-01T12:00:00.000Z' });
 
-  assert.ok(html.includes('<title>Daily DAP - Report Archives</title>'), 'Page title should be set');
+  assert.ok(html.includes('<title>Daily NSF - Report Archives</title>'), 'Page title should be set');
   assert.ok(html.includes('id="archives-heading"'), 'Archives section heading should be present');
   assert.ok(html.includes('href="2026-01-15.zip"'), 'Link to first zip should be present');
   assert.ok(html.includes('href="2026-01-16.zip"'), 'Link to second zip should be present');
@@ -2840,7 +2840,7 @@ test('renderDailyReportPage includes print-only dashboard URL notice', () => {
 
   const html = renderDailyReportPage(report);
   assert.ok(html.includes('class="print-only print-dashboard-notice"'), 'Should include print-only dashboard notice element');
-  assert.ok(html.includes('mgifford.github.io/daily-dap'), 'Dashboard URL should appear in print-only notice');
+  assert.ok(html.includes('mgifford.github.io/daily-nsf'), 'Dashboard URL should appear in print-only notice');
 });
 
 test('renderSharedStyles includes @media print CSS', () => {
