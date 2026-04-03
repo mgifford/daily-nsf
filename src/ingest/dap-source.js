@@ -105,7 +105,7 @@ export async function fetchDapRecords({ endpoint, fetchImpl = fetch }) {
   return extractArrayPayload(payload);
 }
 
-function buildDapEndpoint(endpoint, apiKey, { limit, date } = {}) {
+function buildDapEndpoint(endpoint, apiKey, { limit, after } = {}) {
   const url = new URL(endpoint);
 
   if (apiKey && !url.searchParams.has('api_key')) {
@@ -116,8 +116,8 @@ function buildDapEndpoint(endpoint, apiKey, { limit, date } = {}) {
     url.searchParams.set('limit', String(limit));
   }
 
-  if (date && !url.searchParams.has('date')) {
-    url.searchParams.set('date', date);
+  if (after && !url.searchParams.has('after')) {
+    url.searchParams.set('after', after);
   }
 
   return url.toString();
@@ -148,7 +148,7 @@ export async function getNormalizedTopPages({
     rawRecords = await readDapRecordsFromFile(sourceFile);
   } else {
     const queryDate = sourceDate ? getPreviousDate(sourceDate) : undefined;
-    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit, date: queryDate });
+    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit, after: queryDate });
     rawRecords = await fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
   }
 
