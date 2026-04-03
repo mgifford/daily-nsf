@@ -88,7 +88,7 @@ export async function generateAccessibilitySummary(repoRoot, runDate) {
 
   lines.push(`## Accessibility Summary: ${reportDate}`);
   lines.push('');
-  lines.push(`**Source**: [DAP Top URLs](https://analytics.usa.gov) - Digital Analytics Program`);
+  lines.push(`**Source**: [NSF Top URLs](https://analytics.usa.gov/national-science-foundation) - Digital Analytics Program`);
   lines.push(`**Scanned**: ${report.url_counts.succeeded} of ${report.url_counts.processed} URLs succeeded (${report.url_counts.failed} failed)`);
   lines.push('');
 

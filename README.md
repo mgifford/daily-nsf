@@ -1,7 +1,7 @@
-# Daily DAP Quality Benchmarking
+# Daily NSF Quality Benchmarking
 
-Daily DAP benchmarks the quality and accessibility of the most visited U.S. government pages.
-It prioritizes high-traffic pages because regressions on those pages affect the most people seeking public services.
+Daily NSF benchmarks the quality and accessibility of the most visited National Science Foundation pages.
+It prioritizes high-traffic pages because regressions on those pages affect the most people seeking NSF services.
 
 ## Why this project exists
 
@@ -10,7 +10,7 @@ performance, or usability issues, impact is broad and immediate.
 
 This project provides a daily, repeatable quality signal by:
 
-- pulling top pages from DAP traffic data,
+- pulling top NSF pages from [DAP traffic data](https://analytics.usa.gov/national-science-foundation),
 - scanning those pages with Lighthouse and ScanGov,
 - aggregating quality and impact metrics,
 - publishing dated static reports and trend history.
@@ -18,7 +18,7 @@ This project provides a daily, repeatable quality signal by:
 ## DAP and related resources
 
 - Digital Analytics Program (DAP): https://digital.gov/guides/dap/
-- Analytics.USA.gov overview: https://analytics.usa.gov/
+- NSF Analytics overview: https://analytics.usa.gov/national-science-foundation
 - DAP data endpoint configured in this repo: `src/config/prevalence.yaml`
 - ScanGov (accessibility scanner): https://github.com/GSA/scan-gov
 - Lighthouse: https://developer.chrome.com/docs/lighthouse/overview/
@@ -128,7 +128,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | CI/CD improvements: added dedicated CI workflow for tests on PRs, upgraded accessibility scanner to v3, removed redundant push trigger from scan-github-pages workflow, added open-issues gate to prevent alert fatigue |
 | Claude (Anthropic) | claude-sonnet-4.6 | Added content density (Words-per-Megabyte) feature: integrated @mozilla/readability and jsdom to extract main-content word counts, compute WpM efficiency ratio, flag low-density pages (<200 WpM), and render a Content Density section in daily reports |
 | Claude (Anthropic) | claude-sonnet-4.6 | Improved test coverage: added 119 tests across 5 new test files for previously untested modules (slow-risk, logging, axe-fpc-mapping, build-daily-report, archive-writer); exported 3 helper functions from archive-writer.js for testability |
-| Claude (Anthropic) | claude-sonnet-4.6 | Added axe-core WCAG 2.2 AA accessibility tests for generated HTML: new tests/unit/axe-html-accessibility.test.js checks every render function using a minimal fixture report; fixed aria-prohibited-attr violations (aria-label on role-less spans) in render-pages.js |
+| Claude (Anthropic) | claude-sonnet-4.6 | Configured NSF-specific URL scanning: updated DAP endpoint to `national-science-foundation` agency endpoint, updated analytics.usa.gov reference to NSF-specific page, updated README to reflect NSF focus |
 
 ### Runtime operation
 
