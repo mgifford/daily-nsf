@@ -171,3 +171,24 @@ test('getNormalizedTopPages omits after param when sourceDate is not provided', 
   const parsed = new URL(capturedUrl);
   assert.equal(parsed.searchParams.has('after'), false, 'after should not be added when sourceDate is absent');
 });
+
+test('getNormalizedTopPages includes api_key in the DAP endpoint request when provided', async () => {
+  let capturedUrl = null;
+  const mockFetch = async (url) => {
+    capturedUrl = url;
+    return {
+      ok: true,
+      json: async () => [{ url: 'https://nsf.gov/', page_load_count: 100 }]
+    };
+  };
+
+  await getNormalizedTopPages({
+    endpoint: 'https://api.gsa.gov/analytics/dap/v2/domain/nsf.gov/reports/site/data',
+    limit: 50,
+    dapApiKey: 'DEMO_KEY',
+    fetchImpl: mockFetch
+  });
+
+  const parsed = new URL(capturedUrl);
+  assert.equal(parsed.searchParams.get('api_key'), 'DEMO_KEY', 'api_key should be appended to the DAP endpoint URL');
+});

@@ -484,15 +484,14 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
     });
 
     const dapEndpoint = runtimeConfig.sources?.dap_top_pages_endpoint;
-    const analyticsPublicEndpoint = runtimeConfig.sources?.analytics_public_endpoint;
-    let resolvedEndpoint = dapEndpoint;
-    if (!args.sourceFile && dapEndpoint?.includes('api.gsa.gov') && !dapApiKey) {
-      if (analyticsPublicEndpoint) {
-        logProgress('INITIALIZATION', 'DAP_API_KEY not set; falling back to public analytics.usa.gov endpoint (rolling 7-day window, no auth required)', { endpoint: analyticsPublicEndpoint });
-        resolvedEndpoint = analyticsPublicEndpoint;
-      } else {
-        throw new Error('DAP_API_KEY is required to fetch top pages from api.gsa.gov. Set repo secret DAP_API_KEY or pass --dap-api-key.');
-      }
+    const resolvedEndpoint = dapEndpoint;
+    const isGsaApiEndpoint = (() => {
+      try { return dapEndpoint && new URL(dapEndpoint).hostname === 'api.gsa.gov'; }
+      catch { return false; }
+    })();
+    const effectiveDapApiKey = dapApiKey ?? (isGsaApiEndpoint ? 'DEMO_KEY' : undefined);
+    if (!args.sourceFile && isGsaApiEndpoint && !dapApiKey) {
+      logProgress('INITIALIZATION', 'DAP_API_KEY not set; using DEMO_KEY for DAP API access (rate-limited to 30 req/hr - sufficient for daily scans; set DAP_API_KEY secret for production use)', { endpoint: dapEndpoint });
     }
 
     logStageStart('INGEST', { 
@@ -505,7 +504,7 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       sourceFile: args.sourceFile,
       limit: runtimeConfig.scan.url_limit,
       sourceDate: runMetadata.run_date,
-      dapApiKey
+      dapApiKey: effectiveDapApiKey
     });
 
     logStageComplete('INGEST', {
