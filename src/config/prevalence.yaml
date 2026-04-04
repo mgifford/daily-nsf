@@ -1,5 +1,6 @@
 scan:
   url_limit: 250
+  dap_page_size: 1000
   history_lookback_days: 31
   dashboard_display_days: 14
   traffic_window_mode: daily
@@ -26,5 +27,8 @@ impact:
   fallback_severity_weight: 0.2
 
 sources:
-  dap_top_pages_endpoint: "https://api.gsa.gov/analytics/dap/v2/domain/nsf.gov/reports/site/data"
+  dap_top_pages_endpoints:
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/agencies/national-science-foundation/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/domain/nsf.gov/reports/site/data"
+    - "https://api.gsa.gov/analytics/dap/v2.0.0/domain/new.nsf.gov/reports/site/data"
   analytics_public_endpoint: "https://analytics.usa.gov/data/live/national-science-foundation/top-pages-7-days.json"

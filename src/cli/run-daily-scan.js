@@ -483,14 +483,17 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       trafficWindow: runtimeConfig.scan.traffic_window_mode
     });
 
-    const dapEndpoint = runtimeConfig.sources?.dap_top_pages_endpoint;
-    const resolvedEndpoint = dapEndpoint;
-    const isGsaApiEndpoint = (() => {
-      try { return dapEndpoint && new URL(dapEndpoint).hostname === 'api.gsa.gov'; }
+    const dapEndpoints =
+      runtimeConfig.sources?.dap_top_pages_endpoints ??
+      (runtimeConfig.sources?.dap_top_pages_endpoint ? [runtimeConfig.sources.dap_top_pages_endpoint] : undefined);
+
+    const isGsaApiEndpoint = (ep) => {
+      try { return new URL(ep).hostname === 'api.gsa.gov'; }
       catch { return false; }
-    })();
-    const effectiveDapApiKey = dapApiKey ?? (isGsaApiEndpoint ? 'DEMO_KEY' : undefined);
-    if (!args.sourceFile && isGsaApiEndpoint) {
+    };
+    const anyGsaEndpoint = dapEndpoints?.some(isGsaApiEndpoint) ?? false;
+    const effectiveDapApiKey = dapApiKey ?? (anyGsaEndpoint ? 'DEMO_KEY' : undefined);
+    if (!args.sourceFile && anyGsaEndpoint) {
       let keySource;
       if (args.dapApiKey) {
         keySource = 'cli-arg';
@@ -499,18 +502,19 @@ export async function runDailyScan(inputArgs = parseArgs(process.argv)) {
       } else {
         keySource = 'DEMO_KEY (no DAP_API_KEY configured)';
       }
-      logProgress('INITIALIZATION', `DAP API key source: ${keySource}`, { endpoint: dapEndpoint });
+      logProgress('INITIALIZATION', `DAP API key source: ${keySource}`, { endpointCount: dapEndpoints?.length });
     }
 
     logStageStart('INGEST', { 
       source: args.sourceFile ? 'file' : 'api',
-      endpoint: args.sourceFile || resolvedEndpoint 
+      endpoints: args.sourceFile ? [args.sourceFile] : dapEndpoints
     });
 
     const normalized = await getNormalizedTopPages({
-      endpoint: resolvedEndpoint,
+      endpoints: dapEndpoints,
       sourceFile: args.sourceFile,
       limit: runtimeConfig.scan.url_limit,
+      dapPageSize: runtimeConfig.scan.dap_page_size,
       sourceDate: runMetadata.run_date,
       dapApiKey: effectiveDapApiKey
     });

@@ -105,7 +105,7 @@ export async function fetchDapRecords({ endpoint, fetchImpl = fetch }) {
   return extractArrayPayload(payload);
 }
 
-function buildDapEndpoint(endpoint, apiKey, { limit, after } = {}) {
+function buildDapEndpoint(endpoint, apiKey, { limit, after, page } = {}) {
   const url = new URL(endpoint);
 
   if (apiKey && !url.searchParams.has('api_key')) {
@@ -120,6 +120,10 @@ function buildDapEndpoint(endpoint, apiKey, { limit, after } = {}) {
     url.searchParams.set('after', after);
   }
 
+  if (page != null && !url.searchParams.has('page')) {
+    url.searchParams.set('page', String(page));
+  }
+
   return url.toString();
 }
 
@@ -129,25 +133,97 @@ export async function readDapRecordsFromFile(filePath) {
   return extractArrayPayload(payload);
 }
 
+async function fetchAllPagesFromEndpoint({ endpoint, apiKey, pageSize, fetchImpl }) {
+  // If the endpoint already has a ?limit= preset, respect it as the effective page size
+  const presetLimit = new URL(endpoint).searchParams.get('limit');
+  const effectivePageSize = presetLimit ? parseInt(presetLimit, 10) : pageSize;
+
+  const allRecords = [];
+  let page = 1;
+
+  while (true) {
+    const pagedEndpoint = buildDapEndpoint(endpoint, apiKey, {
+      limit: presetLimit ? undefined : pageSize,
+      page: page > 1 ? page : undefined
+    });
+    const records = await fetchDapRecords({ endpoint: pagedEndpoint, fetchImpl });
+    allRecords.push(...records);
+
+    if (records.length < effectivePageSize) {
+      break;
+    }
+    page++;
+  }
+
+  return allRecords;
+}
+
 export async function getNormalizedTopPages({
   endpoint,
+  endpoints,
   sourceFile,
   limit,
   sourceDate,
   dapApiKey,
+  dapPageSize,
   fetchImpl = fetch
 }) {
   let rawRecords;
   if (sourceFile) {
     rawRecords = await readDapRecordsFromFile(sourceFile);
-  } else {
-    // Do not pass an `after` date filter: the DAP site report returns a 30-day
-    // aggregate when no date range is specified, giving the full top-N URLs.
-    // Passing after=yesterday caused the API to return only today's (incomplete)
-    // records, which resulted in near-zero URL counts on every run.
-    const resolvedEndpoint = buildDapEndpoint(endpoint, dapApiKey, { limit });
-    rawRecords = await fetchDapRecords({ endpoint: resolvedEndpoint, fetchImpl });
+    return normalizeDapRecords(rawRecords, { limit, sourceDate });
   }
 
-  return normalizeDapRecords(rawRecords, { limit, sourceDate });
+  // Resolve endpoints: support both singular and plural config keys
+  const resolvedEndpoints = endpoints ?? (endpoint ? [endpoint] : []);
+  if (resolvedEndpoints.length === 0) {
+    throw new Error('No DAP endpoint(s) configured. Provide endpoint or endpoints.');
+  }
+
+  // Per-page fetch limit: use dapPageSize when provided, fall back to url limit for single-page behavior
+  const pageSize = dapPageSize ?? limit;
+
+  // Fetch all pages from all endpoints concurrently
+  const allRawRecords = (
+    await Promise.all(
+      resolvedEndpoints.map(async (ep) => {
+        return fetchAllPagesFromEndpoint({ endpoint: ep, apiKey: dapApiKey, pageSize, fetchImpl });
+      })
+    )
+  ).flat();
+
+  // Normalize combined records without capping so all records survive to the dedup step
+  const { records: allNormalized, warnings, excluded } = normalizeDapRecords(allRawRecords, {
+    limit: Number.MAX_SAFE_INTEGER,
+    sourceDate
+  });
+
+  // Deduplicate by URL, summing page_load_counts across endpoints
+  const byUrl = new Map();
+  for (const record of allNormalized) {
+    if (!byUrl.has(record.url)) {
+      byUrl.set(record.url, { ...record });
+    } else {
+      const existing = byUrl.get(record.url);
+      if (existing.page_load_count !== null && record.page_load_count !== null) {
+        existing.page_load_count += record.page_load_count;
+      } else if (record.page_load_count !== null) {
+        existing.page_load_count = record.page_load_count;
+      }
+    }
+  }
+
+  // Re-sort after summing and apply the real limit
+  const records = [...byUrl.values()]
+    .sort((a, b) => {
+      const left = a.page_load_count ?? -1;
+      const right = b.page_load_count ?? -1;
+      if (right !== left) {
+        return right - left;
+      }
+      return a.url.localeCompare(b.url);
+    })
+    .slice(0, limit);
+
+  return { records, warnings, excluded };
 }

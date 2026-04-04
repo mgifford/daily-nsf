@@ -136,6 +136,7 @@ This project is transparent about how AI tools have been used throughout its dev
 | Claude (Anthropic) | claude-sonnet-4.6 | Updated all documentation and source references from "Daily DAP" to "Daily NSF": renamed project title, GitHub URLs, GitHub Pages URLs, workflow names, artifact names, User-Agent strings, and HTML page titles across all documentation, source, and test files |
 | Claude (Anthropic) | claude-sonnet-4.6 | Added references and links to analytics.usa.gov alongside DAP mentions in README.md, render-pages.js, and docs/reports/index.html to clarify that traffic data is published at analytics.usa.gov |
 | Claude (Anthropic) | claude-sonnet-4.6 | Reviewed failing CI job (run 23952174109): root cause was missing `DAP_API_KEY` secret causing a hard error instead of graceful fallback; verified fix from PR #12 (public endpoint fallback via `analytics_public_endpoint`); hardened `Fail workflow on pipeline error` step with `always()` guard; updated README to document optional `DAP_API_KEY` with public fallback |
+| Claude (Anthropic) | claude-sonnet-4.6 | Extended NSF coverage to sub-domains: replaced single `dap_top_pages_endpoint` with `dap_top_pages_endpoints` array (NSF agency slug + `nsf.gov` + `new.nsf.gov`); added multi-endpoint concurrent fetch, URL deduplication with summed page_load_count, and pagination support (`dap_page_size`); updated schema, CLI, and tests |
 
 ### Runtime operation
 
