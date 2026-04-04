@@ -2,9 +2,9 @@ FOR IMMEDIATE RELEASE
 
 # U.S. Government Website Accessibility Report: April 4, 2026
 
-*Washington, D.C. -- April 4, 2026* -- A daily scan of 2 of the most-visited U.S. government websites found 0 accessibility barriers across 2 URLs today. The most common issues include accessibility barriers.
+*Washington, D.C. -- April 4, 2026* -- A daily scan of 12 of the most-visited U.S. government websites found 32 accessibility barriers across 12 URLs today. The most common issues include Primary Content Identification, Color-Independent Link Identification, and Digital Motor Access.
 
-These barriers prevent Americans with disabilities from independently accessing essential government services. This is a single daily snapshot of the most popular ~2 pages in U.S. federal government web properties, as measured by the Digital Analytics Program (DAP).
+These barriers prevent Americans with disabilities from independently accessing essential government services. This is a single daily snapshot of the most popular ~12 pages in U.S. federal government web properties, as measured by the Digital Analytics Program (DAP).
 
 ## Americans Being Left Out
 
@@ -12,22 +12,90 @@ Based on page traffic data and U.S. Census disability prevalence estimates (ACS 
 
 | Disability Group | Affected Page Loads | Estimated People Affected |
 |-----------------|---------------------|--------------------------|
-| No affected groups identified | -- | -- |
+| Limited Reach and Strength | 47,764 | ~2,770 |
+| Without Perception of Color | 49,134 | ~2,113 |
+| Limited Vision | 51,310 | ~1,231 |
+| Limited Manipulation | 50,227 | ~1,105 |
+| Without Vision | 50,227 | ~502 |
+| Without Hearing | 50,227 | ~151 |
 
-*Total page loads across all scanned URLs today: 251,478*
+*Total page loads across all scanned URLs today: 430,128*
 
 *Estimates use disability prevalence rates from the U.S. Census Bureau American Community Survey (ACS) 2022, supplemented by CDC, NIDCD, AFB, and NIH/NEI data. These are rough estimates intended to illustrate the scale of accessibility barriers, not precise measurements.*
 
+## Top Accessibility Barriers
+
+The following accessibility issues were most frequently found across today's scanned government websites. Each issue prevents specific groups of Americans from independently accessing government services.
+
+### 1. `landmark-one-main`: Primary Content Identification
+
+*Found on 6 government websites today*
+
+Without a main landmark, screen reader users lose their most efficient way to skip to the primary content of a government page. Every page visit requires tabbing through the entire navigation structure to reach the actual content, a significant time and effort burden that accumulates across repeated visits to government websites for citizens managing ongoing benefit cases or legal matters.
+
+**Affected groups:**
+
+- People who are blind using screen readers
+- People who are deaf and rely on visual-to-text tools
+- People with motor disabilities using keyboard navigation
+
+### 2. `link-in-text-block`: Color-Independent Link Identification
+
+*Found on 5 government websites today*
+
+When links are distinguished only by color, people with color vision deficiency cannot identify them as links and may miss critical references to additional information, forms, or resources. On government websites, overlooked links in informational content can mean missing essential instructions, deadlines, or procedures that affect a citizen's ability to access services or comply with requirements.
+
+**Affected groups:**
+
+- People with low vision who may not perceive color differences
+- People who are color blind (approximately 8% of men, 0.5% of women)
+
+### 3. `target-size`: Digital Motor Access
+
+*Found on 5 government websites today*
+
+Small touch targets act as a digital gatekeeper, excluding individuals with tremors, arthritis, or limited dexterity from accessing essential services independently. These technical failures transform a routine interaction into a source of failure, stripping away the autonomy of citizens who require a frictionless, accessible interface to participate in digital life. The approximately 58 million Americans with ambulatory or self-care disabilities are disproportionately impacted by inadequate touch target sizing on government mobile websites.
+
+**Affected groups:**
+
+- People with Parkinson's disease, arthritis, or hand tremors
+- Older adults with reduced fine motor control
+- People with motor disabilities using alternative pointing devices
+- People in situational impairment contexts (e.g., commuting, holding a child)
+
+### 4. `heading-order`: Document Structure Navigation
+
+*Found on 5 government websites today*
+
+Screen reader users navigate complex government websites primarily through heading structure, using headings as a table of contents to jump between sections. Skipped heading levels break the logical document outline, causing confusion about the hierarchy of information and forcing users to re-read sections to understand the relationship between topics, adding significant time and effort to information-gathering tasks.
+
+**Affected groups:**
+
+- People who are blind using screen readers
+- People who are deaf and rely on visual-to-text tools
+- People with motor disabilities using keyboard navigation
+
+### 5. `color-contrast`: Visual Information Access
+
+*Found on 4 government websites today*
+
+Low contrast text is one of the most pervasive barriers on government websites, rendering critical information invisible to the approximately 26 million Americans with low vision or color blindness. When agency announcements, form instructions, error messages, or legal notices are displayed in insufficient contrast, affected citizens are denied equal access to the information they need to exercise their rights and access public services.
+
+**Affected groups:**
+
+- People with low vision including age-related vision loss
+- People who are color blind (approximately 8% of men, 0.5% of women)
+
 ## Accessibility Scores
 
-Aggregate Lighthouse scores across 2 scanned U.S. government websites today:
+Aggregate Lighthouse scores across 12 scanned U.S. government websites today:
 
 | Metric | Score |
 |--------|-------|
-| Accessibility | 100 |
-| Performance | 55 |
-| Best Practices | 96 |
-| SEO | 92 |
+| Accessibility | 91.36 |
+| Performance | 52.64 |
+| Best Practices | 89.36 |
+| SEO | 86.82 |
 
 ## About This Report
 
