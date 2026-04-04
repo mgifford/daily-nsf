@@ -9,7 +9,7 @@
     "excluded": 0
   },
   "aggregate_scores": {
-    "performance": 52.64,
+    "performance": 50.91,
     "accessibility": 91.36,
     "best_practices": 89.36,
     "seo": 86.82,
@@ -161,10 +161,10 @@
     "benchmark_page_weight_bytes": 1600000,
     "url_count_with_timing": 11,
     "url_count_with_weight": 11,
-    "total_extra_load_time_seconds": 1490983,
-    "total_extra_load_time_hours": 414.16,
-    "total_extra_bytes": 520943207156,
-    "total_extra_gigabytes": 520.94
+    "total_extra_load_time_seconds": 1443300,
+    "total_extra_load_time_hours": 400.92,
+    "total_extra_bytes": 514196784756,
+    "total_extra_gigabytes": 514.2
   },
   "source_data_date": "2026-04-02",
   "top_urls": [
@@ -178,7 +178,7 @@
       "findings_count": 0,
       "severe_findings_count": 0,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 5709.561,
+      "lcp_value_ms": 5593.937500000002,
       "detected_technologies": {
         "cms": "Drupal",
         "uswds": {
@@ -192,10 +192,10 @@
           "jsDelivr CDN"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 14737,
-          "jsDelivr CDN": 1298,
-          "Google Tag Manager": 130740,
-          "Google Analytics": 458458
+          "Digital Analytics Program": 14738,
+          "jsDelivr CDN": 1630,
+          "Google Tag Manager": 130739,
+          "Google Analytics": 458455
         },
         "overlays": []
       },
@@ -214,7 +214,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 54,
+        "performance": 55,
         "accessibility": 100,
         "best_practices": 96,
         "seo": 92,
@@ -237,7 +237,7 @@
       "findings_count": 5,
       "severe_findings_count": 4,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 4239.692,
+      "lcp_value_ms": 4194.07,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -252,9 +252,9 @@
         ],
         "third_party_service_sizes": {
           "Google Fonts": 129477,
-          "Digital Analytics Program": 14738,
-          "cdnjs": 86566,
-          "Google Analytics": 167202
+          "Digital Analytics Program": 14735,
+          "cdnjs": 86582,
+          "Google Analytics": 167200
         },
         "overlays": []
       },
@@ -273,7 +273,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 78,
+        "performance": 79,
         "accessibility": 82,
         "best_practices": 77,
         "seo": 100,
@@ -389,7 +389,7 @@
       "findings_count": 4,
       "severe_findings_count": 2,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 11303.6905,
+      "lcp_value_ms": 11121.413,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -402,7 +402,7 @@
           "ForeSee / Verint"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 10135,
+          "Digital Analytics Program": 10133,
           "Google Analytics": 149376
         },
         "overlays": []
@@ -411,7 +411,7 @@
         "deprecated_apis_passing": null,
         "deprecated_apis_count": 0,
         "errors_in_console_passing": false,
-        "errors_in_console_count": 6,
+        "errors_in_console_count": 2,
         "no_document_write_passing": null,
         "vulnerable_libraries_passing": null,
         "vulnerable_libraries_count": 0,
@@ -422,7 +422,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 35,
+        "performance": 24,
         "accessibility": 88,
         "best_practices": 73,
         "seo": 77,
@@ -545,7 +545,7 @@
       "readability_metrics": {
         "word_count": 173,
         "char_count": 1377,
-        "words_per_mb": 124
+        "words_per_mb": 118
       }
     },
     {
@@ -558,7 +558,7 @@
       "findings_count": 5,
       "severe_findings_count": 3,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 25819.166,
+      "lcp_value_ms": 26640.402499999997,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -570,7 +570,7 @@
           "Digital Analytics Program"
         ],
         "third_party_service_sizes": {
-          "Google Analytics": 483804,
+          "Google Analytics": 484397,
           "Digital Analytics Program": 14212
         },
         "overlays": []
@@ -714,7 +714,7 @@
       "findings_count": 4,
       "severe_findings_count": 2,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 20320.777079999996,
+      "lcp_value_ms": 19950.374340000006,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -726,7 +726,7 @@
           "Digital Analytics Program"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 14736,
+          "Digital Analytics Program": 14738,
           "Google Analytics": 149376
         },
         "overlays": []
@@ -936,7 +936,7 @@
       "findings_count": 2,
       "severe_findings_count": 2,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 12446.283,
+      "lcp_value_ms": 10331.5485,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -953,11 +953,11 @@
           "Google Fonts"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 14595,
-          "cdnjs": 12783,
-          "Google Analytics": 335508,
+          "Digital Analytics Program": 14740,
+          "cdnjs": 12790,
+          "Google Analytics": 335343,
           "Google Fonts": 85129,
-          "Google Tag Manager": 148459,
+          "Google Tag Manager": 148458,
           "YouTube": 526,
           "Google Ads": 559
         },
@@ -978,7 +978,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 63,
+        "performance": 60,
         "accessibility": 93,
         "best_practices": 92,
         "seo": 100,
@@ -1040,7 +1040,7 @@
       "findings_count": 0,
       "severe_findings_count": 0,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 4707.703,
+      "lcp_value_ms": 4750.745000000001,
       "detected_technologies": {
         "cms": "Drupal",
         "uswds": {
@@ -1054,10 +1054,10 @@
           "jsDelivr CDN"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 14739,
-          "jsDelivr CDN": 1298,
-          "Google Tag Manager": 130740,
-          "Google Analytics": 310117
+          "Digital Analytics Program": 14737,
+          "jsDelivr CDN": 1626,
+          "Google Tag Manager": 131124,
+          "Google Analytics": 459647
         },
         "overlays": []
       },
@@ -1076,7 +1076,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 65,
+        "performance": 61,
         "accessibility": 100,
         "best_practices": 96,
         "seo": 92,
@@ -1086,7 +1086,7 @@
       "readability_metrics": {
         "word_count": 100,
         "char_count": 1537,
-        "words_per_mb": 36
+        "words_per_mb": 34
       }
     },
     {
@@ -1099,7 +1099,7 @@
       "findings_count": 3,
       "severe_findings_count": 3,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 17243.868,
+      "lcp_value_ms": 17442.984999999997,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -1111,7 +1111,7 @@
           "Digital Analytics Program"
         ],
         "third_party_service_sizes": {
-          "Google Analytics": 593892,
+          "Google Analytics": 593894,
           "Digital Analytics Program": 14213
         },
         "overlays": []
@@ -1132,7 +1132,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 42,
+        "performance": 44,
         "accessibility": 92,
         "best_practices": 96,
         "seo": 82,
@@ -1278,7 +1278,7 @@
       "findings_count": 4,
       "severe_findings_count": 3,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 10852.036499999998,
+      "lcp_value_ms": 13480.488499999998,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -1294,12 +1294,12 @@
           "Google Fonts"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 14596,
-          "cdnjs": 4206,
-          "Google Tag Manager": 129694,
-          "Google Analytics": 319622,
+          "Digital Analytics Program": 14600,
+          "cdnjs": 4208,
+          "Google Tag Manager": 129417,
+          "Google Analytics": 319897,
           "Google Fonts": 60067,
-          "YouTube": 526
+          "YouTube": 525
         },
         "overlays": []
       },
@@ -1319,7 +1319,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 52,
+        "performance": 49,
         "accessibility": 86,
         "best_practices": 96,
         "seo": 77,
@@ -1413,7 +1413,7 @@
       "findings_count": 4,
       "severe_findings_count": 2,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 7434.451999999999,
+      "lcp_value_ms": 8472.173,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -1426,7 +1426,7 @@
           "ForeSee / Verint"
         ],
         "third_party_service_sizes": {
-          "Digital Analytics Program": 10139,
+          "Digital Analytics Program": 10137,
           "Google Analytics": 149376
         },
         "overlays": []
@@ -1446,7 +1446,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 39,
+        "performance": 38,
         "accessibility": 88,
         "best_practices": 73,
         "seo": 85,
@@ -1612,7 +1612,7 @@
       "findings_count": 1,
       "severe_findings_count": 0,
       "core_web_vitals_status": "poor",
-      "lcp_value_ms": 22521.996000000003,
+      "lcp_value_ms": 22567.54050000001,
       "detected_technologies": {
         "cms": null,
         "uswds": {
@@ -1626,7 +1626,7 @@
         ],
         "third_party_service_sizes": {
           "Google Fonts": 58385,
-          "Google Analytics": 159579,
+          "Google Analytics": 159575,
           "cdnjs": 41188
         },
         "overlays": []
@@ -1648,7 +1648,7 @@
         ]
       },
       "lighthouse_scores": {
-        "performance": 46,
+        "performance": 45,
         "accessibility": 98,
         "best_practices": 92,
         "seo": 58,
@@ -1774,13 +1774,13 @@
       ]
     },
     "third_party_service_total_bytes": {
-      "Digital Analytics Program": 136840,
-      "jsDelivr CDN": 2596,
-      "Google Tag Manager": 539633,
-      "Google Analytics": 3276310,
+      "Digital Analytics Program": 136983,
+      "jsDelivr CDN": 3256,
+      "Google Tag Manager": 539738,
+      "Google Analytics": 3426536,
       "Google Fonts": 333058,
-      "cdnjs": 144743,
-      "YouTube": 1052,
+      "cdnjs": 144768,
+      "YouTube": 1051,
       "Google Ads": 559
     },
     "third_party_service_page_load_totals": {
@@ -1922,7 +1922,7 @@
     "url_count_with_metrics": 10,
     "url_count_low_density": 9,
     "mean_word_count": 189,
-    "mean_words_per_mb": 83,
+    "mean_words_per_mb": 82,
     "low_density_urls": [
       "https://nsf.gov",
       "https://par.nsf.gov",
@@ -2240,15 +2240,15 @@
     {
       "date": "2026-04-04",
       "aggregate_scores": {
-        "performance": 55,
-        "accessibility": 100,
-        "best_practices": 96,
-        "seo": 92,
+        "performance": 52.64,
+        "accessibility": 91.36,
+        "best_practices": 89.36,
+        "seo": 86.82,
         "pwa": 0
       }
     }
   ],
-  "generated_at": "2026-04-04T02:24:47.218Z",
+  "generated_at": "2026-04-04T09:27:18.673Z",
   "report_status": "success",
   "slow_risk_summary": {
     "successful_url_count": 12,
