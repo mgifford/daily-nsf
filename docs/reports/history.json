@@ -1,7 +1,14 @@
 {
-  "generated_at": "2026-04-09T09:44:15.098Z",
+  "generated_at": "2026-04-10T09:42:35.582Z",
   "lookback_days": 31,
   "entries": [
+    {
+      "run_date": "2026-04-10",
+      "run_id": "run-2026-04-10-cf6536a619",
+      "report_path": "daily/2026-04-10/report.json",
+      "page_path": "daily/2026-04-10/index.html",
+      "generated_at": "2026-04-10T09:42:35.582Z"
+    },
     {
       "run_date": "2026-04-09",
       "run_id": "run-2026-04-09-ef4312b4d8",
