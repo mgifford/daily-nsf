@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daily NSF - Report Archives</title>
-  <meta name="description" content="Downloadable zip archives of Daily NSF reports older than 14 days." />
+  <title>HTML/CSS/JS Code Quality - Daily NSF - 2026-04-14</title>
+  <meta name="description" content="HTML, CSS, and JavaScript code quality audit results for the top U.S. government URLs on 2026-04-14, including deprecated APIs, console errors, and vulnerable library detection." />
   
   <meta name="color-scheme" content="light dark" />
   <script>
@@ -15,6 +15,13 @@
       }
     }());
   </script>
+  <style>
+    .audit-pass { color: var(--color-score-good, #2e7d32); font-weight: 700; }
+    .audit-fail { color: var(--color-score-poor, #c62828); font-weight: 700; }
+    .audit-na { color: var(--color-text-muted, #666); }
+    .audit-cell { text-align: center; white-space: nowrap; }
+    .score-note { font-size: 0.8rem; color: var(--color-text-muted, #666); margin-top: 0.25rem; }
+  </style>
   
   <style>
     /* ---------- Color tokens ---------- */
@@ -1099,9 +1106,13 @@
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header" role="banner">
   <div class="site-header-inner">
-    <span class="site-title">Daily NSF</span>
+    <a class="site-title" href="../../index.html">Daily NSF</a>
     <nav aria-label="Site navigation">
+      <a href="../../index.html">Dashboard</a>
       <a class="github-link" href="https://github.com/mgifford/daily-nsf" target="_blank" rel="noreferrer">GitHub</a>
+      <button class="print-btn" type="button" onclick="window.print()" aria-label="Print or save as PDF">
+        <span aria-hidden="true">&#128424;</span> Print / Save as PDF
+      </button>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Enable dark mode">
         <span aria-hidden="true">&#127769;</span> Dark mode
       </button>
@@ -1110,15 +1121,192 @@
 </header>
   <main id="main-content" class="site-main">
     <div class="page-intro">
-      <h1 id="page-title">Report Archives<a href="#page-title" class="heading-anchor" aria-label="Link to Report Archives"><span aria-hidden="true">#</span></a></h1>
-      <p>Daily NSF reports older than 14 days are stored here as downloadable zip archives. Each archive contains the full HTML report, JSON data files, and CSV accessibility findings for that day's scan.</p>
-      <p><a href="../index.html">&larr; Back to dashboard</a></p>
+      <h1 id="page-title">HTML/CSS/JS Code Quality &mdash; 2026-04-14<a href="#page-title" class="heading-anchor" aria-label="Link to HTML/CSS/JS Code Quality — 2026-04-14"><span aria-hidden="true">#</span></a></h1>
+      <p>Run ID: run-2026-04-14-a4b254fa03 &middot; Status: success &middot; <a href="index.html">&larr; Back to full report</a></p>
     </div>
 
-    <section aria-labelledby="archives-heading">
-      <h2 id="archives-heading">Available Archives<a href="#archives-heading" class="heading-anchor" aria-label="Link to Available Archives"><span aria-hidden="true">#</span></a></h2>
-      <p>No archived reports yet.</p>
-      <p class="generated-note">Archive index generated: 2026-04-14T09:50:53.872Z</p>
+    <section aria-labelledby="cq-about-heading">
+      <h2 id="cq-about-heading">About Code Quality<a href="#cq-about-heading" class="heading-anchor" aria-label="Link to About Code Quality"><span aria-hidden="true">#</span></a></h2>
+      <p>This page surfaces HTML, CSS, and JavaScript code quality signals from Google Lighthouse's <strong>Best Practices</strong> category. These audits help identify technical debt, browser compatibility risks, and security vulnerabilities across the most-visited U.S. government websites.</p>
+      <ul>
+        <li><strong>Deprecated APIs</strong> &mdash; Use of browser features (HTML/CSS/JS) that have been removed or scheduled for removal. These can break in current or future browsers and may indicate outdated code that relies on legacy browser behaviour.</li>
+        <li><strong>Console Errors</strong> &mdash; JavaScript runtime errors logged to the browser console during page load. These often indicate broken functionality or incompatible scripts.</li>
+        <li><strong>document.write</strong> &mdash; Use of the synchronous <code>document.write()</code> API. This API blocks HTML parsing, harms performance, and is blocked in certain browser contexts (e.g. HTTP/2 push, cross-origin scripts).</li>
+        <li><strong>Vulnerable Libraries</strong> &mdash; Front-end JavaScript libraries (e.g. jQuery, Bootstrap) with known <a href="https://nvd.nist.gov/" target="_blank" rel="noreferrer">CVE security vulnerabilities</a>. Outdated libraries are a common vector for web security issues.</li>
+        <li><strong>JS Library Inventory</strong> &mdash; All client-side JavaScript libraries detected. Useful for understanding browser compatibility requirements: libraries with wide browser support indicate polyfills may be in use; newer APIs without polyfills may exclude users on older browsers.</li>
+      </ul>
+      <p>All audits come from Lighthouse scanning 10 successfully scanned URLs on 2026-04-14.</p>
+    </section>
+
+    <section aria-labelledby="cq-summary-heading">
+      <h2 id="cq-summary-heading">Summary<a href="#cq-summary-heading" class="heading-anchor" aria-label="Link to Summary"><span aria-hidden="true">#</span></a></h2>
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="score-label">Best Practices Score</div>
+          <div class="score-value">90.89</div>
+          <div class="score-note">Lighthouse aggregate (0&ndash;100)</div>
+        </div>
+<div class="score-card">
+          <div class="score-label">Deprecated APIs</div>
+          <div class="score-value">0 / 10</div>
+          <div class="score-note">0% of scanned URLs</div>
+        </div>
+<div class="score-card">
+          <div class="score-label">Console Errors</div>
+          <div class="score-value">3 / 10</div>
+          <div class="score-note">30% of scanned URLs</div>
+        </div>
+<div class="score-card">
+          <div class="score-label">Vulnerable Libraries</div>
+          <div class="score-value">0 / 10</div>
+          <div class="score-note">0% of scanned URLs</div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cq-libs-heading">
+      <h2 id="cq-libs-heading">Detected JavaScript Libraries<a href="#cq-libs-heading" class="heading-anchor" aria-label="Link to Detected JavaScript Libraries"><span aria-hidden="true">#</span></a></h2>
+      <p>JavaScript libraries detected from network requests during Lighthouse scans. Library version data helps identify whether sites depend on libraries that require polyfills for older browsers, or conversely, rely on browser features that are not yet widely supported.</p>
+      <div class="table-scroll"><table>
+        <caption>JavaScript libraries detected across 10 successfully scanned URLs</caption>
+        <thead><tr><th scope="col">Library</th><th scope="col">URLs</th><th scope="col">Share</th></tr></thead>
+        <tbody><tr><td data-label="Library">jQuery</td><td data-label="URLs">9</td><td data-label="Share">90%</td></tr>
+<tr><td data-label="Library">Bootstrap</td><td data-label="URLs">5</td><td data-label="Share">50%</td></tr>
+<tr><td data-label="Library">jQuery UI</td><td data-label="URLs">3</td><td data-label="Share">30%</td></tr>
+<tr><td data-label="Library">Drupal</td><td data-label="URLs">2</td><td data-label="Share">20%</td></tr>
+<tr><td data-label="Library">Highcharts</td><td data-label="URLs">1</td><td data-label="Share">10%</td></tr>
+<tr><td data-label="Library">Modernizr</td><td data-label="URLs">1</td><td data-label="Share">10%</td></tr>
+<tr><td data-label="Library">Angular</td><td data-label="URLs">1</td><td data-label="Share">10%</td></tr></tbody>
+      </table></div>
+    </section>
+
+    <section aria-labelledby="cq-vuln-heading">
+      <h2 id="cq-vuln-heading">Vulnerable Libraries<a href="#cq-vuln-heading" class="heading-anchor" aria-label="Link to Vulnerable Libraries"><span aria-hidden="true">#</span></a></h2>
+      <p>Libraries with known security vulnerabilities as reported by Lighthouse's <em>no-vulnerable-libraries</em> audit (powered by <a href="https://snyk.io/" target="_blank" rel="noreferrer">Snyk</a>). Upgrading these libraries reduces security risk and may also improve browser compatibility and access to modern APIs.</p>
+      <p>No libraries with known vulnerabilities were detected.</p>
+    </section>
+
+    <section aria-labelledby="cq-urls-heading">
+      <h2 id="cq-urls-heading">Per-URL Code Quality Results<a href="#cq-urls-heading" class="heading-anchor" aria-label="Link to Per-URL Code Quality Results"><span aria-hidden="true">#</span></a></h2>
+      <p>Code quality audit results for each scanned URL. Columns show the Lighthouse Best Practices score and pass &#10003; / fail &#10007; for each audit. Click any URL to open the live page.</p>
+      <div class="table-scroll"><table id="cq-urls-table">
+        <caption>Code quality audit results for the top 10 government URLs by traffic</caption>
+        <thead>
+          <tr>
+            <th scope="col">URL</th>
+            <th scope="col">Best Practices</th>
+            <th scope="col">Deprecated APIs</th>
+            <th scope="col">Console Errors</th>
+            <th scope="col">document.write</th>
+            <th scope="col">Vulnerable Libs</th>
+            <th scope="col">JS Libraries</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+          <td data-label="URL"><a href="https://nsf.gov" target="_blank" rel="noreferrer">https://nsf.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">Drupal</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://par.nsf.gov" target="_blank" rel="noreferrer">https://par.nsf.gov</a></td>
+          <td data-label="Best Practices">77</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://research.gov" target="_blank" rel="noreferrer">https://research.gov</a></td>
+          <td data-label="Best Practices">73</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (2)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://ncses.nsf.gov" target="_blank" rel="noreferrer">https://ncses.nsf.gov</a></td>
+          <td data-label="Best Practices">100</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">Highcharts</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://usap.gov" target="_blank" rel="noreferrer">https://usap.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://seedfund.nsf.gov" target="_blank" rel="noreferrer">https://seedfund.nsf.gov</a></td>
+          <td data-label="Best Practices">92</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (2)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">Modernizr</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://ncsesdata.nsf.gov" target="_blank" rel="noreferrer">https://ncsesdata.nsf.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-fail" aria-label="Audit failing">&#10007;</span> (2)</td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">Angular</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://www.nsf.gov" target="_blank" rel="noreferrer">https://www.nsf.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">jQuery</span> <span class="tech-badge">Drupal</span></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://search.nsf.gov" target="_blank" rel="noreferrer">https://search.nsf.gov</a></td>
+          <td data-label="Best Practices">0</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"></td>
+        </tr>
+<tr>
+          <td data-label="URL"><a href="https://iucrc.nsf.gov" target="_blank" rel="noreferrer">https://iucrc.nsf.gov</a></td>
+          <td data-label="Best Practices">96</td>
+          <td data-label="Deprecated APIs" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Console Errors" class="audit-cell"><span class="audit-pass" aria-label="Audit passing">&#10003;</span></td>
+          <td data-label="document.write" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="Vulnerable Libraries" class="audit-cell"><span class="audit-na" aria-label="Not available">&mdash;</span></td>
+          <td data-label="JS Libraries"><span class="tech-badge">Bootstrap</span> <span class="tech-badge">jQuery</span> <span class="tech-badge">jQuery UI</span></td>
+        </tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section aria-labelledby="cq-compat-heading">
+      <h2 id="cq-compat-heading">Browser Compatibility Context<a href="#cq-compat-heading" class="heading-anchor" aria-label="Link to Browser Compatibility Context"><span aria-hidden="true">#</span></a></h2>
+      <p>U.S. government websites should support the broadest possible range of users. This means:</p>
+      <ul>
+        <li><strong>Avoid too-new APIs</strong> without polyfills &mdash; features only available in recent browser versions exclude users on older hardware or enterprise environments with locked browser versions.</li>
+        <li><strong>Avoid too-old APIs</strong> &mdash; deprecated or removed browser features may fail silently or cause errors in modern browsers.</li>
+        <li><strong>Use polyfills strategically</strong> &mdash; polyfills allow use of modern features with graceful fallback for older browsers, but unused polyfills add unnecessary page weight. <a href="https://caniuse.com/" target="_blank" rel="noreferrer">Can I Use</a> provides browser support data to determine when a polyfill can be removed.</li>
+        <li><strong>Keep libraries updated</strong> &mdash; updated libraries often include browser compatibility improvements and security patches.</li>
+      </ul>
+      <p>The <strong>Deprecated APIs</strong> and <strong>Vulnerable Libraries</strong> audits above are the most actionable signals for improving browser compatibility and security on government websites.</p>
     </section>
   </main>
 

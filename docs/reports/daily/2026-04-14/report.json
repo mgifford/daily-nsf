@@ -1,0 +1,1976 @@
+{
+  "run_date": "2026-04-14",
+  "run_id": "run-2026-04-14-a4b254fa03",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 10,
+    "succeeded": 10,
+    "failed": 0,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 52.56,
+    "accessibility": 91,
+    "best_practices": 90.89,
+    "seo": 90.22,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 15.34,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 266.19
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 612.24
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 1144.62
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 79.86
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 905.05
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 133.1
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 612.24
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 1543.9
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 1304.33
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 173513,
+    "scanned_url_count": 10,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 49611,
+        "affected_share_percent": 28.59,
+        "estimated_excluded_users": 496.11,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 50282,
+        "affected_share_percent": 28.98,
+        "estimated_excluded_users": 1206.77,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 47769,
+        "affected_share_percent": 27.53,
+        "estimated_excluded_users": 2054.07,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 49611,
+        "affected_share_percent": 28.59,
+        "estimated_excluded_users": 148.83,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 49611,
+        "affected_share_percent": 28.59,
+        "estimated_excluded_users": 1091.44,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 47031,
+        "affected_share_percent": 27.11,
+        "estimated_excluded_users": 2727.8,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 9,
+    "url_count_with_weight": 9,
+    "total_extra_load_time_seconds": 717746,
+    "total_extra_load_time_hours": 199.37,
+    "total_extra_bytes": 149479224760,
+    "total_extra_gigabytes": 149.48
+  },
+  "source_data_date": "2026-04-12",
+  "top_urls": [
+    {
+      "url": "https://nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 122475,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6906.109999999999,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "jsDelivr CDN"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14740,
+          "jsDelivr CDN": 1626,
+          "Google Tag Manager": 132772,
+          "Google Analytics": 461767
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 100,
+        "char_count": 1537,
+        "words_per_mb": 38
+      }
+    },
+    {
+      "url": "https://par.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 39052,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 5,
+      "severe_findings_count": 4,
+      "core_web_vitals_status": "needs_improvement",
+      "lcp_value_ms": 3618.7159999999994,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "cdnjs",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Google Fonts": 129477,
+          "Digital Analytics Program": 14738,
+          "cdnjs": 86562,
+          "Google Analytics": 168619
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 88,
+        "accessibility": 82,
+        "best_practices": 77,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.input-group > span.formfield-clear > div > button.close",
+              "snippet": "<button type=\"button\" class=\"close\" aria-hidden=\"true\">",
+              "node_label": "×",
+              "explanation": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body > div#official-site-container > div#official-site > label",
+              "snippet": "<label for=\"how-you-know\">",
+              "node_label": "Here's how you know ",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #69beaa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
+              "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Public Access",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-12 > p > a#frequently-asked-questions-link",
+              "snippet": "<a href=\"https://par.nsf.gov/faq\" id=\"frequently-asked-questions-link\">",
+              "node_label": "Frequently Asked Questions",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.col-lg-12 > p > span#send-feedback-link > a",
+              "snippet": "<a itemprop=\"\" href=\"mailto:publicaccess@nsf.gov?subject=Feedback\">",
+              "node_label": "link",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div > form#index_search > div#advsearch_btn > a#adv_toggle",
+              "snippet": "<a href=\"#advfilters\" data-target=\"#advfilters\" data-toggle=\"modal\" id=\"adv_toggle\">",
+              "node_label": "+ Advanced Search",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (104.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 131,
+        "char_count": 1112,
+        "words_per_mb": 146
+      }
+    },
+    {
+      "url": "https://research.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 6246,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6883.0125,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "ForeSee / Verint"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10124,
+          "Google Analytics": 150486
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 27,
+        "accessibility": 88,
+        "best_practices": 73,
+        "seo": 77,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#home-wrapper > div.row > div.col-sm-3 > h4",
+              "snippet": "<h4>",
+              "node_label": "NSF Award Highlights",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.bucket3 > ul.fa-ul > li > a",
+              "snippet": "<a href=\"https://www.research.gov/proposalprep/#/sfr\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/SFR Home Page', 'WT.dl','100')\">",
+              "node_label": "Supplemental Funding Requests",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.63:1 with the surrounding text. (Minimum contrast is 3:1, link text: #017d96, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Proposal Status footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutproposalstatus\">",
+              "node_label": "Proposal Status",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Public Access footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutpubaccess\">",
+              "node_label": "Public Access",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (74px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=rcnt\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Recently Announced Funding Opportunities foo…\">",
+              "node_label": "Recently Announced Funding Opportunities",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (231.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=date_\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Upcoming Funding Opportunity Due Dates foote…\">",
+              "node_label": "Upcoming Funding Opportunity Due Dates",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (226.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Find Funding footer', 'WT.dl','100');\">",
+              "node_label": "Find Funding",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (70px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Award Search footer', 'WT.dl','100');\" href=\"https://www.nsf.gov/awardsearch/simpleSearch.jsp\">",
+              "node_label": "Award Search",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (75.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/publications/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Publications footer', 'WT.dl','100');\">",
+              "node_label": "Publications",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (64.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/about/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/ About the National Science Foundation foote…\">",
+              "node_label": "About NSF",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (58.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/careers/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Careers footer', 'WT.dl','100');\">",
+              "node_label": "Careers",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (42.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 173,
+        "char_count": 1377,
+        "words_per_mb": 191
+      }
+    },
+    {
+      "url": "https://ncses.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 2513,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 5,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 30981.446,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 487396,
+          "Digital Analytics Program": 14213
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "Highcharts",
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 45,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "aria-required-attr",
+          "title": "`[role]`s do not have all required `[aria-*]` attributes",
+          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body.container-fluid > header#main-header > section#gov-banner > div#gov-banner-header",
+              "snippet": "<div role=\"heading\" id=\"gov-banner-header\">",
+              "node_label": " An official website of the United States government\n\nHere’s how you know",
+              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col > a > h5.card-title",
+              "snippet": "<h5 class=\"card-title\">",
+              "node_label": "Distribution of Federal Science and Engineering Support to Higher Education Ins…",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "selector": "div.container > div.row > div.areas-of-interest > h4",
+              "snippet": "<h4>",
+              "node_label": "Explore Our Areas of Interest",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column",
+              "snippet": "<ul aria-label=\"Our data and analysis\" class=\"ncses-link-column\">",
+              "node_label": "OUR DATA AND ANALYSIS\nAreas of Interest\nCorrections\nExplore Data\nSchedule of Re…",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+            },
+            {
+              "selector": "footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column",
+              "snippet": "<ul aria-label=\"About\" class=\"ncses-link-column\">",
+              "node_label": "ABOUT\nAbout NCSES\nQuality & Transparency\nWhat's New From NCSES",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+            },
+            {
+              "selector": "footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column",
+              "snippet": "<ul aria-label=\"Help\" class=\"ncses-link-column\">",
+              "node_label": "HELP\nContact Us\nFrequently Asked Questions\nGlossary\nNCSES Knowledge Base",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: #text"
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.ncses-links > ul.ncses-link-column > li > a",
+              "snippet": "<a href=\"/about/contact\" aria-label=\"N C S E S contact page\" rel=\"noopener\" tabindex=\"0\">",
+              "node_label": "Contact Us",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 119,
+        "char_count": 1775,
+        "words_per_mb": 15
+      }
+    },
+    {
+      "url": "https://usap.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1142,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 20944.728744999997,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14738,
+          "Google Analytics": 150486
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 56,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#sitetop > div.header > div#quicklinks > a.quicklink",
+              "snippet": "<a class=\"quicklink\" href=\"https://www.usap.gov/stationTimes.cfm\">",
+              "node_label": "Station Times",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #6d9ed5, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div#sitetop > div.header > div#quicklinks > a.quicklink",
+              "snippet": "<a class=\"quicklink\" href=\"https://www.usap.gov/contentHandler.cfm?id=492\">",
+              "node_label": "Contact Us",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #6d9ed5, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div#sitetop > div.header > div#quicklinks > a.quicklink",
+              "snippet": "<a class=\"quicklink\" href=\"https://www.usap.gov/\">",
+              "node_label": "Home",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #6d9ed5, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.nsf.gov/policies/privacy\">",
+              "node_label": "Privacy",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.nsf.gov/policies/foia\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.nsf.gov/od/ocr/no-fear-act\">",
+              "node_label": "No FEAR Act",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.usa.gov/\">",
+              "node_label": "USA.gov",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.nsf.gov/policies/accessibility\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "div.footer-container > ul > li > a",
+              "snippet": "<a href=\"https://www.nsf.gov/policies/plain-language\">",
+              "node_label": "Plain Language",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.89 (foreground color: #ffffff, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "selector": "body > div.footer > div.footer-container > div.officialNSF",
+              "snippet": "<div class=\"officialNSF\">",
+              "node_label": "An official website of the U.S. National Science Foundation.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.78 (foreground color: #f8f8f8, background color: #bdbcbc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > h4",
+              "snippet": "<h4>",
+              "node_label": "NSF releases final South Pole Station Master Plan",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/jobsAndOpportunities/\">",
+              "node_label": "Jobs and Opportunities",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (123.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20.6px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/aboutTheUSAP/\">",
+              "node_label": "About the Program",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (100.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20.6px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/aboutUSAPParticipants/\">",
+              "node_label": "About USAP Participants",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (133.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14.8px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/travelAndDeployment/contentHandler.cfm?id=541\">",
+              "node_label": "USAP Participant Guide",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (127.9px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14.8px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/stationTimes.cfm\">",
+              "node_label": "USAP Station Times",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (108.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/travelAndDeployment/\">",
+              "node_label": "Travel and Deployment",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (123.6px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.2px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://www.usap.gov/contentHandler.cfm?id=491\">",
+              "node_label": "Help and Support",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (93.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 15.2px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"mailto:websupport@usap.gov\">",
+              "node_label": "Email the USAP",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (86px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14.4px instead of at least 24px."
+            },
+            {
+              "selector": "tbody > tr > td > a",
+              "snippet": "<a href=\"https://feedback.usap.gov/WSF/index.cfm?siteName=USAPgov\">",
+              "node_label": "Feedback Form",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14.4px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 68,
+        "char_count": 446,
+        "words_per_mb": 20
+      }
+    },
+    {
+      "url": "https://seedfund.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 671,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 9299.1875,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "Google Ads",
+          "YouTube",
+          "cdnjs",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14603,
+          "cdnjs": 12797,
+          "Google Analytics": 337675,
+          "Google Fonts": 85129,
+          "Google Tag Manager": 150457,
+          "YouTube": 529,
+          "Google Ads": 559
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Modernizr"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 62,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
+              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
+              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
+              "snippet": "<a href=\"mailto:sbir@nsf.gov\" alt=\"sbir@nsf.gov\">",
+              "node_label": "sbir@nsf.gov",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 952,
+        "char_count": 8695,
+        "words_per_mb": 281
+      }
+    },
+    {
+      "url": "https://ncsesdata.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 591,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 3,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 15261.86800000001,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 599041,
+          "Digital Analytics Program": 14602
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "Angular"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 35,
+        "accessibility": 92,
+        "best_practices": 96,
+        "seo": 82,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "span > div.banner-flex-container > div.banner-text > a",
+              "snippet": "<a href=\"https://now.nsf.gov/ncses?id=kb_article_view&amp;sysparm_article=KB0013598\" style=\"margin-left:.25rem\" target=\"_blank\">",
+              "node_label": "article",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #0d6efd, background color: #fafafa, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-website-policies",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-website-policies\" href=\"https://www.nsf.gov/policies/\" class=\"text-nowrap\">",
+              "node_label": "Website Policies",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (114.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-budget-and-performance",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-budget-and-performance\" href=\"https://www.nsf.gov/about/performance/\" class=\"text-nowrap\">",
+              "node_label": "Budget and Performance",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (167.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-inspector-general",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-inspector-general\" href=\"https://www.nsf.gov/oig/\" class=\"text-nowrap\">",
+              "node_label": "Inspector General",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (123.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-foia",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-foia\" href=\"https://www.nsf.gov/policies/foia.jsp\" class=\"text-nowrap\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (44.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-no-fear-act",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-no-fear-act\" href=\"https://www.nsf.gov/od/oecr/nofearact_notice.jsp\" class=\"text-nowrap\">",
+              "node_label": "No FEAR Act",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (94.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-accessibility",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-accessibility\" href=\"https://ncses.nsf.gov/accessibility\" class=\"text-nowrap\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (88.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-research-gov",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-research-gov\" href=\"https://www.research.gov/\" class=\"text-nowrap\">",
+              "node_label": "Research.gov",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (98.4px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "header > nav.header > div.navbar > button.navbar-toggler",
+              "snippet": "<button _ngcontent-ng-c713153184=\"\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler collapsed btn-menu\">",
+              "node_label": "Menu",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://www.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 435,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6363.867500000002,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "jsDelivr CDN"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14739,
+          "jsDelivr CDN": 1334,
+          "Google Tag Manager": 132775,
+          "Google Analytics": 461769
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 100,
+        "char_count": 1537,
+        "words_per_mb": 38
+      }
+    },
+    {
+      "url": "https://search.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 321,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
+    },
+    {
+      "url": "https://iucrc.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 67,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 11756.892499999998,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "YouTube",
+          "cdnjs",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14598,
+          "cdnjs": 4207,
+          "Google Tag Manager": 130464,
+          "Google Analytics": 171895,
+          "Google Fonts": 60067,
+          "YouTube": 526
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 52,
+        "accessibility": 86,
+        "best_practices": 96,
+        "seo": 77,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "aria-required-attr",
+          "title": "`[role]`s do not have all required `[aria-*]` attributes",
+          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.carousel__content > div.carousel__text-cta > p.carousel__subtitle",
+              "snippet": "<p class=\"carousel__subtitle\" role=\"heading\">",
+              "node_label": "Industry-University Cooperative Research Centers (IUCRC)",
+              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "a.three-column-cta__link > div.three-column-cta__card > div.three-column-cta__content > h4",
+              "snippet": "<h4>",
+              "node_label": "Value to Industry",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "selector": "div.col-12 > div.row > div.col-12 > h4.footer__list-title",
+              "snippet": "<h4 class=\"footer__list-title\">",
+              "node_label": "Resource Links",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.achievement-cards__desc > p > a",
+              "snippet": "<a href=\"/about/\">",
+              "node_label": "the IUCRC program, history and mission",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.66:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005ea2, surrounding text: #171717)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.hero > div#carouselText > div.container > ol.carousel-indicators",
+              "snippet": "<ol class=\"carousel-indicators\">",
+              "node_label": "     ",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=button]"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 86,
+        "char_count": 523,
+        "words_per_mb": 30
+      }
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {
+      "Drupal": 2
+    },
+    "cms_urls": {
+      "Drupal": [
+        "https://nsf.gov",
+        "https://www.nsf.gov"
+      ]
+    },
+    "uswds_count": 4,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://nsf.gov",
+        "https://research.gov",
+        "https://seedfund.nsf.gov",
+        "https://www.nsf.gov"
+      ]
+    },
+    "total_scanned": 10,
+    "third_party_service_counts": {
+      "Google Analytics": 9,
+      "Google Tag Manager": 4,
+      "Digital Analytics Program": 9,
+      "jsDelivr CDN": 2,
+      "cdnjs": 3,
+      "Google Fonts": 3,
+      "ForeSee / Verint": 1,
+      "Google Ads": 1,
+      "YouTube": 2
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://nsf.gov",
+        "https://par.nsf.gov",
+        "https://research.gov",
+        "https://ncses.nsf.gov",
+        "https://usap.gov",
+        "https://seedfund.nsf.gov",
+        "https://ncsesdata.nsf.gov",
+        "https://www.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "Google Tag Manager": [
+        "https://nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://www.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://nsf.gov",
+        "https://par.nsf.gov",
+        "https://research.gov",
+        "https://ncses.nsf.gov",
+        "https://usap.gov",
+        "https://seedfund.nsf.gov",
+        "https://ncsesdata.nsf.gov",
+        "https://www.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "jsDelivr CDN": [
+        "https://nsf.gov",
+        "https://www.nsf.gov"
+      ],
+      "cdnjs": [
+        "https://par.nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "Google Fonts": [
+        "https://par.nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "ForeSee / Verint": [
+        "https://research.gov"
+      ],
+      "Google Ads": [
+        "https://seedfund.nsf.gov"
+      ],
+      "YouTube": [
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "Digital Analytics Program": 127095,
+      "jsDelivr CDN": 2960,
+      "Google Tag Manager": 546468,
+      "Google Analytics": 2989134,
+      "Google Fonts": 274673,
+      "cdnjs": 103566,
+      "YouTube": 1055,
+      "Google Ads": 559
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 173192,
+      "Google Tag Manager": 123648,
+      "Digital Analytics Program": 173192,
+      "jsDelivr CDN": 122910,
+      "cdnjs": 39790,
+      "Google Fonts": 39790,
+      "ForeSee / Verint": 6246,
+      "Google Ads": 671,
+      "YouTube": 738
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 10,
+      "domains_with_statement": 8,
+      "statement_rate_percent": 80,
+      "domains_without_statement": [
+        "ncsesdata.nsf.gov",
+        "par.nsf.gov"
+      ],
+      "statement_urls": [
+        "https://iucrc.nsf.gov/accessibility",
+        "https://ncses.nsf.gov/accessibility",
+        "https://nsf.gov/accessibility",
+        "https://research.gov/accessibility",
+        "https://search.nsf.gov/accessibility",
+        "https://seedfund.nsf.gov/accessibility",
+        "https://usap.gov/accessibility",
+        "https://www.nsf.gov/accessibility"
+      ]
+    },
+    "required_links_summary": {
+      "domains_checked": 10,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 7,
+          "rate_percent": 70,
+          "missing_domains": [
+            "ncses.nsf.gov",
+            "ncsesdata.nsf.gov",
+            "par.nsf.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/privacy",
+            "https://nsf.gov/privacy",
+            "https://research.gov/privacy",
+            "https://search.nsf.gov/privacy",
+            "https://seedfund.nsf.gov/privacy",
+            "https://usap.gov/privacy",
+            "https://www.nsf.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 9,
+          "rate_percent": 90,
+          "missing_domains": [
+            "ncsesdata.nsf.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/contact",
+            "https://ncses.nsf.gov/contact",
+            "https://nsf.gov/contact",
+            "https://par.nsf.gov/contact",
+            "https://research.gov/contact",
+            "https://search.nsf.gov/contact",
+            "https://seedfund.nsf.gov/contact",
+            "https://usap.gov/contact",
+            "https://www.nsf.gov/contact-us"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 7,
+          "rate_percent": 70,
+          "missing_domains": [
+            "ncses.nsf.gov",
+            "ncsesdata.nsf.gov",
+            "par.nsf.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/foia",
+            "https://nsf.gov/foia",
+            "https://research.gov/foia",
+            "https://search.nsf.gov/foia",
+            "https://seedfund.nsf.gov/foia",
+            "https://usap.gov/foia",
+            "https://www.nsf.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 7,
+      "fully_compliant_rate_percent": 70
+    }
+  },
+  "code_quality_summary": {
+    "total_scanned": 10,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 3,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "jQuery": 9,
+      "Drupal": 2,
+      "Bootstrap": 5,
+      "Highcharts": 1,
+      "jQuery UI": 3,
+      "Modernizr": 1,
+      "Angular": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [
+        "https://research.gov",
+        "https://seedfund.nsf.gov",
+        "https://ncsesdata.nsf.gov"
+      ],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 8,
+    "url_count_low_density": 7,
+    "mean_word_count": 216,
+    "mean_words_per_mb": 95,
+    "low_density_urls": [
+      "https://nsf.gov",
+      "https://par.nsf.gov",
+      "https://research.gov",
+      "https://ncses.nsf.gov",
+      "https://usap.gov",
+      "https://www.nsf.gov",
+      "https://iucrc.nsf.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-03-15",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-16",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-23",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-24",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-25",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-27",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-28",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-29",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-30",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "aggregate_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "aggregate_scores": {
+        "performance": 50.91,
+        "accessibility": 91.36,
+        "best_practices": 89.36,
+        "seo": 86.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "aggregate_scores": {
+        "performance": 49.3,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "aggregate_scores": {
+        "performance": 52.4,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "aggregate_scores": {
+        "performance": 51.7,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "aggregate_scores": {
+        "performance": 46.82,
+        "accessibility": 91.36,
+        "best_practices": 89.36,
+        "seo": 86.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "aggregate_scores": {
+        "performance": 47.4,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "aggregate_scores": {
+        "performance": 49.7,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "aggregate_scores": {
+        "performance": 50,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "aggregate_scores": {
+        "performance": 55.7,
+        "accessibility": 90.9,
+        "best_practices": 91,
+        "seo": 90.4,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "aggregate_scores": {
+        "performance": 54.4,
+        "accessibility": 90.9,
+        "best_practices": 91,
+        "seo": 90.4,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-04-14T09:49:01.213Z",
+  "report_status": "success",
+  "slow_risk_summary": {
+    "successful_url_count": 10,
+    "slow_risk_url_count": 8,
+    "successful_page_load_count": 173513,
+    "slow_risk_page_load_count": 134140,
+    "slow_risk_traffic_share_percent": 77.31
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 10,
+    "success_count": 10,
+    "failed_count": 0,
+    "excluded_count": 0,
+    "timeout_count": 0,
+    "retry_count": 0,
+    "failure_reasons": {}
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
+  ]
+}
