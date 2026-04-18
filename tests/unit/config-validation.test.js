@@ -57,3 +57,82 @@ test('applyRuntimeOverrides rejects invalid traffic window', async () => {
     applyRuntimeOverrides(config, { trafficWindowMode: 'invalid_mode' });
   }, /Invalid traffic window override/);
 });
+
+test('validatePrevalenceConfig accepts pause_after_load_ms as a non-negative integer', () => {
+  const config = {
+    scan: {
+      url_limit: 100,
+      history_lookback_days: 30,
+      traffic_window_mode: 'daily',
+      pause_after_load_ms: 2000
+    },
+    impact: {
+      prevalence_rates: { blindness: 0.01 },
+      severity_weights: { critical: 1, serious: 0.6, moderate: 0.3, minor: 0.1 },
+      fallback_severity_weight: 0.2
+    }
+  };
+
+  const result = validatePrevalenceConfig(config);
+  assert.equal(result.valid, true);
+  assert.equal(result.errors.length, 0);
+});
+
+test('validatePrevalenceConfig accepts pause_after_load_ms of 0', () => {
+  const config = {
+    scan: {
+      url_limit: 100,
+      history_lookback_days: 30,
+      traffic_window_mode: 'daily',
+      pause_after_load_ms: 0
+    },
+    impact: {
+      prevalence_rates: { blindness: 0.01 },
+      severity_weights: { critical: 1, serious: 0.6, moderate: 0.3, minor: 0.1 },
+      fallback_severity_weight: 0.2
+    }
+  };
+
+  const result = validatePrevalenceConfig(config);
+  assert.equal(result.valid, true);
+});
+
+test('validatePrevalenceConfig rejects pause_after_load_ms when negative', () => {
+  const config = {
+    scan: {
+      url_limit: 100,
+      history_lookback_days: 30,
+      traffic_window_mode: 'daily',
+      pause_after_load_ms: -1
+    },
+    impact: {
+      prevalence_rates: { blindness: 0.01 },
+      severity_weights: { critical: 1, serious: 0.6, moderate: 0.3, minor: 0.1 },
+      fallback_severity_weight: 0.2
+    }
+  };
+
+  const result = validatePrevalenceConfig(config);
+  assert.equal(result.valid, false);
+  assert.ok(result.errors.some((error) => error.includes('pause_after_load_ms')));
+});
+
+test('validatePrevalenceConfig rejects pause_after_load_ms when non-integer', () => {
+  const config = {
+    scan: {
+      url_limit: 100,
+      history_lookback_days: 30,
+      traffic_window_mode: 'daily',
+      pause_after_load_ms: 1.5
+    },
+    impact: {
+      prevalence_rates: { blindness: 0.01 },
+      severity_weights: { critical: 1, serious: 0.6, moderate: 0.3, minor: 0.1 },
+      fallback_severity_weight: 0.2
+    }
+  };
+
+  const result = validatePrevalenceConfig(config);
+  assert.equal(result.valid, false);
+  assert.ok(result.errors.some((error) => error.includes('pause_after_load_ms')));
+});
