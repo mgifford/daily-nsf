@@ -69,6 +69,16 @@ export function validatePrevalenceConfig(config) {
     }
   }
 
+  if (scan.pause_after_load_ms !== undefined) {
+    if (
+      typeof scan.pause_after_load_ms !== 'number' ||
+      !Number.isInteger(scan.pause_after_load_ms) ||
+      scan.pause_after_load_ms < 0
+    ) {
+      errors.push('scan.pause_after_load_ms must be a non-negative integer when provided');
+    }
+  }
+
   if (!assertObject(impact.prevalence_rates, 'impact.prevalence_rates', errors)) {
     return { valid: false, errors };
   }
