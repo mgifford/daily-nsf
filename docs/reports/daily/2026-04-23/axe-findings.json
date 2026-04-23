@@ -1,7 +1,7 @@
 {
-  "run_date": "2026-04-09",
-  "run_id": "run-2026-04-09-ef4312b4d8",
-  "generated_at": "2026-04-09T09:44:15.098Z",
+  "run_date": "2026-04-23",
+  "run_id": "run-2026-04-23-8ce6ebce26",
+  "generated_at": "2026-04-23T09:53:23.712Z",
   "total_urls": 11,
   "total_findings": 31,
   "urls": [
@@ -10,105 +10,6 @@
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
-    },
-    {
-      "url": "https://par.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 5,
-      "axe_findings": [
-        {
-          "id": "aria-hidden-focus",
-          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
-          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.input-group > span.formfield-clear > div > button.close",
-              "snippet": "<button type=\"button\" class=\"close\" aria-hidden=\"true\">",
-              "node_label": "×",
-              "explanation": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
-            }
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "body > div#official-site-container > div#official-site > label",
-              "snippet": "<label for=\"how-you-know\">",
-              "node_label": "Here's how you know ",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #69beaa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
-              "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Public Access",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#frequently-asked-questions-link",
-              "snippet": "<a href=\"https://par.nsf.gov/faq\" id=\"frequently-asked-questions-link\">",
-              "node_label": "Frequently Asked Questions",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.col-lg-12 > p > span#send-feedback-link > a",
-              "snippet": "<a itemprop=\"\" href=\"mailto:publicaccess@nsf.gov?subject=Feedback\">",
-              "node_label": "link",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div > form#index_search > div#advsearch_btn > a#adv_toggle",
-              "snippet": "<a href=\"#advfilters\" data-target=\"#advfilters\" data-toggle=\"modal\" id=\"adv_toggle\">",
-              "node_label": "+ Advanced Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (104.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html",
-              "snippet": "<html lang=\"en\">",
-              "node_label": "html",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        }
-      ]
     },
     {
       "url": "https://research.gov",
@@ -230,6 +131,105 @@
       ]
     },
     {
+      "url": "https://par.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 5,
+      "axe_findings": [
+        {
+          "id": "aria-hidden-focus",
+          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
+          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.input-group > span.formfield-clear > div > button.close",
+              "snippet": "<button type=\"button\" class=\"close\" aria-hidden=\"true\">",
+              "node_label": "×",
+              "explanation": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "body > div#official-site-container > div#official-site > label",
+              "snippet": "<label for=\"how-you-know\">",
+              "node_label": "Here's how you know ",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #69beaa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
+              "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
+              "node_label": "Public Access",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.row > div.col-lg-12 > p > a#frequently-asked-questions-link",
+              "snippet": "<a href=\"https://par.nsf.gov/faq\" id=\"frequently-asked-questions-link\">",
+              "node_label": "Frequently Asked Questions",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
+              "selector": "div.col-lg-12 > p > span#send-feedback-link > a",
+              "snippet": "<a itemprop=\"\" href=\"mailto:publicaccess@nsf.gov?subject=Feedback\">",
+              "node_label": "link",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div > form#index_search > div#advsearch_btn > a#adv_toggle",
+              "snippet": "<a href=\"#advfilters\" data-target=\"#advfilters\" data-toggle=\"modal\" id=\"adv_toggle\">",
+              "node_label": "+ Advanced Search",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (104.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "url": "https://ncses.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 5,
@@ -329,6 +329,51 @@
               "snippet": "<a href=\"/about/contact\" aria-label=\"N C S E S contact page\" rel=\"noopener\" tabindex=\"0\">",
               "node_label": "Contact Us",
               "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://seedfund.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
+              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
+              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
+              "snippet": "<a href=\"mailto:sbir@nsf.gov\" alt=\"sbir@nsf.gov\">",
+              "node_label": "sbir@nsf.gov",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         }
@@ -508,57 +553,6 @@
       ]
     },
     {
-      "url": "https://seedfund.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
-              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
-            },
-            {
-              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
-              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
-              "snippet": "<a href=\"mailto:sbir@nsf.gov\" alt=\"sbir@nsf.gov\">",
-              "node_label": "sbir@nsf.gov",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://search.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
-    },
-    {
       "url": "https://www.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
@@ -656,81 +650,10 @@
       ]
     },
     {
-      "url": "https://iucrc.nsf.gov",
+      "url": "https://search.nsf.gov",
       "scan_status": "success",
-      "axe_findings_count": 4,
-      "axe_findings": [
-        {
-          "id": "aria-required-attr",
-          "title": "`[role]`s do not have all required `[aria-*]` attributes",
-          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.container > div.carousel__content > div.carousel__text-cta > p.carousel__subtitle",
-              "snippet": "<p class=\"carousel__subtitle\" role=\"heading\">",
-              "node_label": "Industry-University Cooperative Research Centers (IUCRC)",
-              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
-            }
-          ]
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "a.three-column-cta__link > div.three-column-cta__card > div.three-column-cta__content > h4",
-              "snippet": "<h4>",
-              "node_label": "Value to Industry",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            },
-            {
-              "selector": "div.col-12 > div.row > div.col-12 > h4.footer__list-title",
-              "snippet": "<h4 class=\"footer__list-title\">",
-              "node_label": "Resource Links",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.container > div.achievement-cards__desc > p > a",
-              "snippet": "<a href=\"/about/\">",
-              "node_label": "the IUCRC program, history and mission",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.66:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005ea2, surrounding text: #171717)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "list",
-          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
-          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.hero > div#carouselText > div.container > ol.carousel-indicators",
-              "snippet": "<ol class=\"carousel-indicators\">",
-              "node_label": "     ",
-              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=button]"
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://web.acpt.research.gov",
@@ -876,6 +799,83 @@
               "snippet": "<html lang=\"en\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://iucrc.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 4,
+      "axe_findings": [
+        {
+          "id": "aria-required-attr",
+          "title": "`[role]`s do not have all required `[aria-*]` attributes",
+          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.carousel__content > div.carousel__text-cta > p.carousel__subtitle",
+              "snippet": "<p class=\"carousel__subtitle\" role=\"heading\">",
+              "node_label": "Industry-University Cooperative Research Centers (IUCRC)",
+              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "a.three-column-cta__link > div.three-column-cta__card > div.three-column-cta__content > h4",
+              "snippet": "<h4>",
+              "node_label": "Value to Industry",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "selector": "div.col-12 > div.row > div.col-12 > h4.footer__list-title",
+              "snippet": "<h4 class=\"footer__list-title\">",
+              "node_label": "Resource Links",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.achievement-cards__desc > p > a",
+              "snippet": "<a href=\"/about/\">",
+              "node_label": "the IUCRC program, history and mission",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.66:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005ea2, surrounding text: #171717)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.hero > div#carouselText > div.container > ol.carousel-indicators",
+              "snippet": "<ol class=\"carousel-indicators\">",
+              "node_label": "     ",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=button]"
             }
           ]
         }
