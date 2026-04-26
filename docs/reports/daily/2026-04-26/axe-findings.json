@@ -1,111 +1,18 @@
 {
-  "run_date": "2026-04-12",
-  "run_id": "run-2026-04-12-3381b38b07",
-  "generated_at": "2026-04-12T09:32:03.090Z",
-  "total_urls": 11,
-  "total_findings": 29,
+  "run_date": "2026-04-26",
+  "run_id": "run-2026-04-26-86bef0a4ab",
+  "generated_at": "2026-04-26T09:34:44.383Z",
+  "total_urls": 12,
+  "total_findings": 27,
   "urls": [
     {
-      "url": "https://par.nsf.gov",
+      "url": "https://nsf.gov",
       "scan_status": "success",
-      "axe_findings_count": 5,
-      "axe_findings": [
-        {
-          "id": "aria-hidden-focus",
-          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
-          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.input-group > span.formfield-clear > div > button.close",
-              "snippet": "<button type=\"button\" class=\"close\" aria-hidden=\"true\">",
-              "node_label": "×",
-              "explanation": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
-            }
-          ]
-        },
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "body > div#official-site-container > div#official-site > label",
-              "snippet": "<label for=\"how-you-know\">",
-              "node_label": "Here's how you know ",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #69beaa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
-              "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Public Access",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#frequently-asked-questions-link",
-              "snippet": "<a href=\"https://par.nsf.gov/faq\" id=\"frequently-asked-questions-link\">",
-              "node_label": "Frequently Asked Questions",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.col-lg-12 > p > span#send-feedback-link > a",
-              "snippet": "<a itemprop=\"\" href=\"mailto:publicaccess@nsf.gov?subject=Feedback\">",
-              "node_label": "link",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div > form#index_search > div#advsearch_btn > a#adv_toggle",
-              "snippet": "<a href=\"#advfilters\" data-target=\"#advfilters\" data-toggle=\"modal\" id=\"adv_toggle\">",
-              "node_label": "+ Advanced Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (104.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html",
-              "snippet": "<html lang=\"en\">",
-              "node_label": "html",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
-      "url": "https://nsf.gov",
+      "url": "https://par.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -157,57 +64,87 @@
           "items": [
             {
               "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Account Management footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutacctmgmt\">",
+              "node_label": "Account Management",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (116.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Proposal Status footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutproposalstatus\">",
               "node_label": "Proposal Status",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (84.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Public Access footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutpubaccess\">",
               "node_label": "Public Access",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (74px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 17.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (74px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/news/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/News footer', 'WT.dl','100');\">",
+              "node_label": "News",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (30px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/discoveries/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Discoveries footer', 'WT.dl','100');\">",
+              "node_label": "Discoveries",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (62px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/news/mmg/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Multimedia Gallery footer', 'WT.dl','100');\">",
+              "node_label": "Multimedia Gallery",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (99.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-4 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=rcnt\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Recently Announced Funding Opportunities foo…\">",
               "node_label": "Recently Announced Funding Opportunities",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (231.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (231.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-4 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=date_\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Upcoming Funding Opportunity Due Dates foote…\">",
               "node_label": "Upcoming Funding Opportunity Due Dates",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (226.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (226.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/azindex.jsp\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/AZ Index of Funding Opportunities footer', '…\">",
+              "node_label": "A-Z Index of Funding Opportunities",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (186.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-4 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/funding/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Find Funding footer', 'WT.dl','100');\">",
               "node_label": "Find Funding",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (70px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (70px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-4 > ul > li > a",
               "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Award Search footer', 'WT.dl','100');\" href=\"https://www.nsf.gov/awardsearch/simpleSearch.jsp\">",
               "node_label": "Award Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (75.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (75.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/publications/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Publications footer', 'WT.dl','100');\">",
               "node_label": "Publications",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (64.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (64.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/about/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/ About the National Science Foundation foote…\">",
               "node_label": "About NSF",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (58.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16.4px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (58.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
               "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a href=\"http://www.nsf.gov/careers/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Careers footer', 'WT.dl','100');\">",
               "node_label": "Careers",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (42.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+              "explanation": "Fix any of the following:\n  Target has insufficient size (42.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             }
           ]
         },
@@ -329,6 +266,51 @@
               "snippet": "<a href=\"/about/contact\" aria-label=\"N C S E S contact page\" rel=\"noopener\" tabindex=\"0\">",
               "node_label": "Contact Us",
               "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://seedfund.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
+              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
+              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
+              "snippet": "<a href=\"mailto:sbir@nsf.gov\" alt=\"sbir@nsf.gov\">",
+              "node_label": "sbir@nsf.gov",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         }
@@ -508,71 +490,16 @@
       ]
     },
     {
-      "url": "https://seedfund.nsf.gov",
+      "url": "https://www.nsf.gov",
       "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
-              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
-            },
-            {
-              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
-              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
-              "snippet": "<a href=\"mailto:sbir@nsf.gov\" alt=\"sbir@nsf.gov\">",
-              "node_label": "sbir@nsf.gov",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        }
-      ]
+      "axe_findings_count": 0,
+      "axe_findings": []
     },
     {
       "url": "https://ncsesdata.nsf.gov",
       "scan_status": "success",
-      "axe_findings_count": 3,
+      "axe_findings_count": 2,
       "axe_findings": [
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "span > div.banner-flex-container > div.banner-text > a",
-              "snippet": "<a href=\"https://now.nsf.gov/ncses?id=kb_article_view&amp;sysparm_article=KB0013598\" style=\"margin-left:.25rem\" target=\"_blank\">",
-              "node_label": "article",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #0d6efd, background color: #fafafa, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
-            }
-          ]
-        },
         {
           "id": "target-size",
           "title": "Touch targets do not have sufficient size or spacing.",
@@ -642,12 +569,6 @@
           ]
         }
       ]
-    },
-    {
-      "url": "https://www.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
     },
     {
       "url": "https://search.nsf.gov",
@@ -733,77 +654,133 @@
       ]
     },
     {
-      "url": "https://sac.gov",
+      "url": "https://web.acpt.research.gov",
       "scan_status": "success",
-      "axe_findings_count": 2,
+      "axe_findings_count": 4,
       "axe_findings": [
         {
-          "id": "tabindex",
-          "title": "Some elements have a `[tabindex]` value greater than 0",
-          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div#home-wrapper > div.row > div.col-sm-3 > h4",
+              "snippet": "<h4>",
+              "node_label": "NSF Award Highlights",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
           "score": 0,
           "impact": "serious",
           "tags": [],
           "items": [
             {
-              "selector": "body > a#skip",
-              "snippet": "<a tabindex=\"10\" href=\"#content\" accesskey=\"1\" id=\"skip\">",
-              "node_label": "Skip to Content",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.bucket3 > ul.fa-ul > li > a",
+              "snippet": "<a href=\"https://web.acpt.research.gov/proposalprep/#/sfr\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/SFR Home Page', 'WT.dl','100')\">",
+              "node_label": "Supplemental Funding Requests",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.63:1 with the surrounding text. (Minimum contrast is 3:1, link text: #017d96, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Account Management footer', 'WT.dl','100');\" href=\"https://web.acpt.research.gov/research-web/content/aboutacctmgmt\">",
+              "node_label": "Account Management",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (116.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#main-area > div#header > div#logo > a",
-              "snippet": "<a href=\"./\" tabindex=\"5\">",
-              "node_label": "Small Agency Council",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Proposal Status footer', 'WT.dl','100');\" href=\"https://web.acpt.research.gov/research-web/content/aboutproposalstatus\">",
+              "node_label": "Proposal Status",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (84.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.home > a.active",
-              "snippet": "<a href=\"./\" tabindex=\"20\" class=\"active\">",
-              "node_label": "Home",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Public Access footer', 'WT.dl','100');\" href=\"https://web.acpt.research.gov/research-web/content/aboutpubaccess\">",
+              "node_label": "Public Access",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (74px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.about > a",
-              "snippet": "<a href=\"./about/\" tabindex=\"30\">",
-              "node_label": "About",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/news/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/News footer', 'WT.dl','100');\">",
+              "node_label": "News",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (30px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.executive-committee > a",
-              "snippet": "<a href=\"./committees/executive.htm\" tabindex=\"40\">",
-              "node_label": "Executive Committee",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/discoveries/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Discoveries footer', 'WT.dl','100');\">",
+              "node_label": "Discoveries",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (62px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.committees > a",
-              "snippet": "<a href=\"./committees/\" tabindex=\"50\">",
-              "node_label": "Committees",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/news/mmg/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Multimedia Gallery footer', 'WT.dl','100');\">",
+              "node_label": "Multimedia Gallery",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (99.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.meetings > a",
-              "snippet": "<a href=\"./meetings/\" tabindex=\"60\">",
-              "node_label": "Meetings",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=rcnt\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Recently Announced Funding Opportunities foo…\">",
+              "node_label": "Recently Announced Funding Opportunities",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (231.5px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.links > a",
-              "snippet": "<a href=\"./links/\" tabindex=\"70\">",
-              "node_label": "Links",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/pgm_list.jsp?org=NSF&amp;ord=date_\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Upcoming Funding Opportunity Due Dates foote…\">",
+              "node_label": "Upcoming Funding Opportunity Due Dates",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (226.1px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div#mainNav > ul > li.contact > a",
-              "snippet": "<a href=\"./contact/\" tabindex=\"80\">",
-              "node_label": "Contact",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/azindex.jsp\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/AZ Index of Funding Opportunities footer', '…\">",
+              "node_label": "A-Z Index of Funding Opportunities",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (186.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             },
             {
-              "selector": "div.promoAlt > div.txt > p.link > a",
-              "snippet": "<a href=\"./about/\" tabindex=\"85\">",
-              "node_label": "LEARN MORE ABOUT THE COUNCIL",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/funding/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Find Funding footer', 'WT.dl','100');\">",
+              "node_label": "Find Funding",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (70px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-4 > ul > li > a",
+              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Award Search footer', 'WT.dl','100');\" href=\"https://www.acpt.nsf.gov/awardsearch/simpleSearch.jsp\">",
+              "node_label": "Award Search",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (75.2px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/publications/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Publications footer', 'WT.dl','100');\">",
+              "node_label": "Publications",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (64.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/about/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/ About the National Science Foundation foote…\">",
+              "node_label": "About NSF",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (58.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
+            },
+            {
+              "selector": "div.col-sm-2 > ul > li > a",
+              "snippet": "<a href=\"http://www.nsf.gov/careers/\" onclick=\"dcsMultiTrack('DCS.dcsuri', '/Careers footer', 'WT.dl','100');\">",
+              "node_label": "Careers",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (42.7px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
             }
           ]
         },
@@ -817,7 +794,52 @@
           "items": [
             {
               "selector": "html",
-              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">",
+              "snippet": "<html lang=\"en\">",
+              "node_label": "html",
+              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://polarice.usap.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "td > div > span.copyright > a",
+              "snippet": "<a href=\"javascript:popWindow('/noscript/rob.cfm','rob',550,420,'yes')\">",
+              "node_label": "POLAR ICE Rules of Behavior",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (135.1px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
+            },
+            {
+              "selector": "td > div > span.copyright > a",
+              "snippet": "<a href=\"javascript:popWindow('http://www.usap.gov/usapgov/contentHandler.cfm?id=10…\">",
+              "node_label": "Policies and Important Links",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (125.1px by 11px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "landmark-one-main",
+          "title": "Document does not have a main landmark.",
+          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "html",
+              "snippet": "<html lang=\"en\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
