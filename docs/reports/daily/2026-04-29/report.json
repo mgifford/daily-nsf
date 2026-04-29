@@ -1,0 +1,687 @@
+{
+  "run_date": "2026-04-29",
+  "run_id": "run-2026-04-29-a0d3a24fe0",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 1,
+    "succeeded": 1,
+    "failed": 0,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 55,
+    "accessibility": 100,
+    "best_practices": 96,
+    "seo": 92,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 0,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 0
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 0
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 92547,
+    "scanned_url_count": 1,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 1,
+    "url_count_with_weight": 1,
+    "total_extra_load_time_seconds": 294678,
+    "total_extra_load_time_hours": 81.86,
+    "total_extra_bytes": 115611748434,
+    "total_extra_gigabytes": 115.61
+  },
+  "source_data_date": "2026-04-27",
+  "top_urls": [
+    {
+      "url": "https://nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 92547,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5684.090499999999,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "jsDelivr CDN"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14864,
+          "jsDelivr CDN": 1334,
+          "Google Tag Manager": 133009,
+          "Google Analytics": 462130
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 99,
+        "char_count": 1553,
+        "words_per_mb": 35
+      }
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {
+      "Drupal": 1
+    },
+    "cms_urls": {
+      "Drupal": [
+        "https://nsf.gov"
+      ]
+    },
+    "uswds_count": 1,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://nsf.gov"
+      ]
+    },
+    "total_scanned": 1,
+    "third_party_service_counts": {
+      "Google Analytics": 1,
+      "Google Tag Manager": 1,
+      "Digital Analytics Program": 1,
+      "jsDelivr CDN": 1
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://nsf.gov"
+      ],
+      "Google Tag Manager": [
+        "https://nsf.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://nsf.gov"
+      ],
+      "jsDelivr CDN": [
+        "https://nsf.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "Digital Analytics Program": 14864,
+      "jsDelivr CDN": 1334,
+      "Google Tag Manager": 133009,
+      "Google Analytics": 462130
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 92547,
+      "Google Tag Manager": 92547,
+      "Digital Analytics Program": 92547,
+      "jsDelivr CDN": 92547
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 1,
+      "domains_with_statement": 1,
+      "statement_rate_percent": 100,
+      "domains_without_statement": [],
+      "statement_urls": [
+        "https://nsf.gov/accessibility"
+      ]
+    },
+    "required_links_summary": {
+      "domains_checked": 1,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://nsf.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://nsf.gov/contact"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 1,
+          "rate_percent": 100,
+          "missing_domains": [],
+          "link_urls": [
+            "https://nsf.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 1,
+      "fully_compliant_rate_percent": 100
+    }
+  },
+  "code_quality_summary": {
+    "total_scanned": 1,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 0,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "jQuery": 1,
+      "Drupal": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 1,
+    "url_count_low_density": 1,
+    "mean_word_count": 99,
+    "mean_words_per_mb": 35,
+    "low_density_urls": [
+      "https://nsf.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-03-30",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-01",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-02",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "aggregate_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "aggregate_scores": {
+        "performance": 50.91,
+        "accessibility": 91.36,
+        "best_practices": 89.36,
+        "seo": 86.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "aggregate_scores": {
+        "performance": 49.3,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "aggregate_scores": {
+        "performance": 52.4,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "aggregate_scores": {
+        "performance": 51.7,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "aggregate_scores": {
+        "performance": 46.82,
+        "accessibility": 91.36,
+        "best_practices": 89.36,
+        "seo": 86.82,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "aggregate_scores": {
+        "performance": 47.4,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "aggregate_scores": {
+        "performance": 49.7,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "aggregate_scores": {
+        "performance": 50,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "aggregate_scores": {
+        "performance": 55.7,
+        "accessibility": 90.9,
+        "best_practices": 91,
+        "seo": 90.4,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "aggregate_scores": {
+        "performance": 54.4,
+        "accessibility": 90.9,
+        "best_practices": 91,
+        "seo": 90.4,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "aggregate_scores": {
+        "performance": 52.56,
+        "accessibility": 91,
+        "best_practices": 90.89,
+        "seo": 90.22,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "aggregate_scores": {
+        "performance": 53.2,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "aggregate_scores": {
+        "performance": 53.2,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "aggregate_scores": {
+        "performance": 48.44,
+        "accessibility": 91.67,
+        "best_practices": 90.44,
+        "seo": 88.56,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "aggregate_scores": {
+        "performance": 55.1,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 88.8,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "aggregate_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "aggregate_scores": {
+        "performance": 51.6,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 89.7,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "aggregate_scores": {
+        "performance": 49.8,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "aggregate_scores": {
+        "performance": 49.7,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "aggregate_scores": {
+        "performance": 51.5,
+        "accessibility": 90.7,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "aggregate_scores": {
+        "performance": 48,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "aggregate_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "aggregate_scores": {
+        "performance": 50.5,
+        "accessibility": 92,
+        "best_practices": 90.6,
+        "seo": 87.2,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "aggregate_scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "aggregate_scores": {
+        "performance": 47.78,
+        "accessibility": 92.11,
+        "best_practices": 90.44,
+        "seo": 86.78,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-04-29T09:57:22.130Z",
+  "report_status": "success",
+  "slow_risk_summary": {
+    "successful_url_count": 1,
+    "slow_risk_url_count": 1,
+    "successful_page_load_count": 92547,
+    "slow_risk_page_load_count": 92547,
+    "slow_risk_traffic_share_percent": 100
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 1,
+    "success_count": 1,
+    "failed_count": 0,
+    "excluded_count": 0,
+    "timeout_count": 0,
+    "retry_count": 0,
+    "failure_reasons": {}
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
+  ]
+}
