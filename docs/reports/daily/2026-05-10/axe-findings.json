@@ -1,7 +1,7 @@
 {
-  "run_date": "2026-04-26",
-  "run_id": "run-2026-04-26-86bef0a4ab",
-  "generated_at": "2026-04-26T09:34:44.383Z",
+  "run_date": "2026-05-10",
+  "run_id": "run-2026-05-10-1b643a602d",
+  "generated_at": "2026-05-10T09:48:25.511Z",
   "total_urls": 12,
   "total_findings": 27,
   "urls": [
@@ -198,7 +198,7 @@
             {
               "selector": "div.row > div.col > a > h5.card-title",
               "snippet": "<h5 class=\"card-title\">",
-              "node_label": "Distribution of Federal Science and Engineering Support to Higher Education Ins…",
+              "node_label": "Federal R&D Obligations Increased 4.4% in FY 2024; Most Agencies Estimate Decli…",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             },
             {
