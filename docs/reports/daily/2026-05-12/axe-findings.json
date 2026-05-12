@@ -1,7 +1,7 @@
 {
-  "run_date": "2026-04-28",
-  "run_id": "run-2026-04-28-d4553a4fc5",
-  "generated_at": "2026-04-28T10:01:29.429Z",
+  "run_date": "2026-05-12",
+  "run_id": "run-2026-05-12-ee14045c22",
+  "generated_at": "2026-05-12T10:08:14.328Z",
   "total_urls": 11,
   "total_findings": 25,
   "urls": [
@@ -198,7 +198,7 @@
             {
               "selector": "div.row > div.col > a > h5.card-title",
               "snippet": "<h5 class=\"card-title\">",
-              "node_label": "Distribution of Federal Science and Engineering Support to Higher Education Ins…",
+              "node_label": "Federal R&D Obligations Increased 4.4% in FY 2024; Most Agencies Estimate Decli…",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             },
             {
@@ -577,83 +577,6 @@
       "axe_findings": []
     },
     {
-      "url": "https://iucrc.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 4,
-      "axe_findings": [
-        {
-          "id": "aria-required-attr",
-          "title": "`[role]`s do not have all required `[aria-*]` attributes",
-          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
-          "score": 0,
-          "impact": "critical",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.container > div.carousel__content > div.carousel__text-cta > p.carousel__subtitle",
-              "snippet": "<p class=\"carousel__subtitle\" role=\"heading\">",
-              "node_label": "Industry-University Cooperative Research Centers (IUCRC)",
-              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
-            }
-          ]
-        },
-        {
-          "id": "heading-order",
-          "title": "Heading elements are not in a sequentially-descending order",
-          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "a.three-column-cta__link > div.three-column-cta__card > div.three-column-cta__content > h4",
-              "snippet": "<h4>",
-              "node_label": "Value to Industry",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            },
-            {
-              "selector": "div.col-12 > div.row > div.col-12 > h4.footer__list-title",
-              "snippet": "<h4 class=\"footer__list-title\">",
-              "node_label": "Resource Links",
-              "explanation": "Fix any of the following:\n  Heading order invalid"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.container > div.achievement-cards__desc > p > a",
-              "snippet": "<a href=\"/about/\">",
-              "node_label": "the IUCRC program, history and mission",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.66:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005ea2, surrounding text: #171717)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "list",
-          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
-          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.hero > div#carouselText > div.container > ol.carousel-indicators",
-              "snippet": "<ol class=\"carousel-indicators\">",
-              "node_label": "     ",
-              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=button]"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "url": "https://web.acpt.research.gov",
       "scan_status": "success",
       "axe_findings_count": 4,
@@ -797,6 +720,83 @@
               "snippet": "<html lang=\"en\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://iucrc.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 4,
+      "axe_findings": [
+        {
+          "id": "aria-required-attr",
+          "title": "`[role]`s do not have all required `[aria-*]` attributes",
+          "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).",
+          "score": 0,
+          "impact": "critical",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.carousel__content > div.carousel__text-cta > p.carousel__subtitle",
+              "snippet": "<p class=\"carousel__subtitle\" role=\"heading\">",
+              "node_label": "Industry-University Cooperative Research Centers (IUCRC)",
+              "explanation": "Fix any of the following:\n  Required ARIA attribute not present: aria-level"
+            }
+          ]
+        },
+        {
+          "id": "heading-order",
+          "title": "Heading elements are not in a sequentially-descending order",
+          "description": "Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",
+          "score": 0,
+          "impact": "moderate",
+          "tags": [],
+          "items": [
+            {
+              "selector": "a.three-column-cta__link > div.three-column-cta__card > div.three-column-cta__content > h4",
+              "snippet": "<h4>",
+              "node_label": "Value to Industry",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            },
+            {
+              "selector": "div.col-12 > div.row > div.col-12 > h4.footer__list-title",
+              "snippet": "<h4 class=\"footer__list-title\">",
+              "node_label": "Resource Links",
+              "explanation": "Fix any of the following:\n  Heading order invalid"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.container > div.achievement-cards__desc > p > a",
+              "snippet": "<a href=\"/about/\">",
+              "node_label": "the IUCRC program, history and mission",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.66:1 with the surrounding text. (Minimum contrast is 3:1, link text: #005ea2, surrounding text: #171717)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        },
+        {
+          "id": "list",
+          "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+          "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.hero > div#carouselText > div.container > ol.carousel-indicators",
+              "snippet": "<ol class=\"carousel-indicators\">",
+              "node_label": "     ",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed: [role=button]"
             }
           ]
         }
