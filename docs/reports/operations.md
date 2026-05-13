@@ -6,6 +6,19 @@
 - Preserve artifact diagnostics for every run.
 - Support safe reruns and controlled rollback when publication errors occur.
 
+## Definition of Done for a daily report release
+
+- Daily `report.json` is generated and passes the report schema contract tests.
+- Date-stamped page `docs/reports/daily/YYYY-MM-DD/index.html` is rendered from the same report payload.
+- Required metrics are present: aggregate Lighthouse categories, accessibility impact estimates, URL run counts (`succeeded` / `failed` / `excluded`), and trend/history data.
+- `docs/reports/history.json` is updated and respects configured lookback limits.
+- Committed snapshot outputs and artifact manifest remain in sync for run date/id, hashes, and byte counts.
+- Failure runs publish explicit failure report/page plus diagnostics artifact (no silent drop).
+- Published HTML keeps accessibility landmarks and escapes external/user-provided text.
+- Rerunning the same date safely overwrites snapshot output and deduplicates the history entry.
+- Validation passes before merge: `npm test` and publishing smoke coverage.
+- Final merge requires reviewer sign-off for report accuracy, publishability, and archive integrity.
+
 ## Routine execution
 
 - Scheduled execution is handled by `.github/workflows/daily-scan.yml`.

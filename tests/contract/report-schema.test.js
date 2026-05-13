@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
+import crypto from 'node:crypto';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import Ajv2020 from 'ajv/dist/2020.js';
@@ -18,6 +19,10 @@ async function loadReportValidator() {
   const ajv = new Ajv2020({ allErrors: true, strict: false });
   addFormats(ajv);
   return ajv.compile(schema);
+}
+
+function sha256(content) {
+  return crypto.createHash('sha256').update(content).digest('hex');
 }
 
 function createReportFixture(overrides = {}) {
@@ -193,4 +198,31 @@ test('snapshot writer and artifact manifest stay in sync', async () => {
 
   assert.equal(manifest.files.some((file) => file.path === `docs/reports/daily/${report.run_date}/report.json`), true);
   assert.equal(manifest.files.some((file) => file.path === 'docs/reports/history.json'), true);
+
+  const manifestReportEntry = manifest.files.find((file) => file.path === `docs/reports/daily/${report.run_date}/report.json`);
+  const manifestHistoryEntry = manifest.files.find((file) => file.path === 'docs/reports/history.json');
+
+  assert.ok(manifestReportEntry, 'manifest should include daily report file');
+  assert.ok(manifestHistoryEntry, 'manifest should include history index file');
+
+  const writtenReportRaw = await fs.readFile(reportPath, 'utf8');
+  const writtenHistoryRaw = await fs.readFile(historyPath, 'utf8');
+
+  assert.equal(manifestReportEntry.sha256, sha256(writtenReportRaw), 'report.json hash should match manifest');
+  assert.equal(
+    manifestHistoryEntry.sha256,
+    sha256(writtenHistoryRaw),
+    'history.json hash should match manifest'
+  );
+
+  assert.equal(
+    manifestReportEntry.bytes,
+    Buffer.byteLength(writtenReportRaw, 'utf8'),
+    'report.json byte length should match manifest'
+  );
+  assert.equal(
+    manifestHistoryEntry.bytes,
+    Buffer.byteLength(writtenHistoryRaw, 'utf8'),
+    'history.json byte length should match manifest'
+  );
 });
