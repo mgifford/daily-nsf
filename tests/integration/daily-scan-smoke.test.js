@@ -153,3 +153,53 @@ test('runDailyScan mock mode without outputRoot writes to temp directory', async
   const prodExists = await fs.access(prodReportPath).then(() => true).catch(() => false);
   assert.equal(prodExists, false, 'Mock scan without outputRoot should NOT write to production docs directory');
 });
+
+test('runDailyScan rerun for same date overwrites snapshot files and keeps one history entry', async () => {
+  const outputRoot = await createTempWorkspace();
+  const runDate = '2026-02-24';
+
+  await runDailyScan({
+    dryRun: false,
+    configPath: null,
+    sourceFile: fixturePath('dap-sample.json'),
+    urlLimit: 6,
+    trafficWindowMode: 'daily',
+    runDate,
+    scanMode: 'mock',
+    mockFailUrl: ['example.gov'],
+    outputRoot,
+    concurrency: 3,
+    timeoutMs: 20000,
+    maxRetries: 0
+  });
+
+  const reportPath = path.join(outputRoot, 'docs', 'reports', 'daily', runDate, 'report.json');
+  const firstReport = JSON.parse(await fs.readFile(reportPath, 'utf8'));
+  assert.equal(firstReport.run_date, runDate);
+  assert.ok(firstReport.url_counts.failed >= 1, 'first run should include failures');
+
+  await runDailyScan({
+    dryRun: false,
+    configPath: null,
+    sourceFile: fixturePath('dap-sample.json'),
+    urlLimit: 6,
+    trafficWindowMode: 'daily',
+    runDate,
+    scanMode: 'mock',
+    mockFailUrl: [],
+    outputRoot,
+    concurrency: 3,
+    timeoutMs: 20000,
+    maxRetries: 0
+  });
+
+  const secondReport = JSON.parse(await fs.readFile(reportPath, 'utf8'));
+  assert.equal(secondReport.run_date, runDate);
+  assert.equal(secondReport.url_counts.failed, 0, 'second run should overwrite with successful scan results');
+  assert.equal(secondReport.report_status, 'success');
+
+  const historyRaw = await fs.readFile(path.join(outputRoot, 'docs', 'reports', 'history.json'), 'utf8');
+  const history = JSON.parse(historyRaw);
+  const runDateEntries = history.entries.filter((entry) => entry.run_date === runDate);
+  assert.equal(runDateEntries.length, 1, 'history should keep only one entry for a rerun date');
+});
