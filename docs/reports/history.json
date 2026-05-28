@@ -1,7 +1,14 @@
 {
-  "generated_at": "2026-05-27T10:39:15.859Z",
+  "generated_at": "2026-05-28T10:38:54.599Z",
   "lookback_days": 31,
   "entries": [
+    {
+      "run_date": "2026-05-28",
+      "run_id": "run-2026-05-28-ad07261b27",
+      "report_path": "daily/2026-05-28/report.json",
+      "page_path": "daily/2026-05-28/index.html",
+      "generated_at": "2026-05-28T10:38:54.599Z"
+    },
     {
       "run_date": "2026-05-27",
       "run_id": "run-2026-05-27-91f29dea6a",
@@ -211,13 +218,6 @@
       "report_path": "daily/2026-04-28/report.json",
       "page_path": "daily/2026-04-28/index.html",
       "generated_at": "2026-04-28T10:01:29.429Z"
-    },
-    {
-      "run_date": "2026-04-27",
-      "run_id": "run-2026-04-27-2e96c3e0ab",
-      "report_path": "daily/2026-04-27/report.json",
-      "page_path": "daily/2026-04-27/index.html",
-      "generated_at": "2026-04-27T10:00:38.710Z"
     }
   ]
 }
