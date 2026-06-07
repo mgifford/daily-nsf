@@ -1,0 +1,15 @@
+{
+  "run_date": "2026-06-07",
+  "run_id": "run-2026-06-07-97d2272705",
+  "generated_at": "2026-06-07T10:11:30.272Z",
+  "total_urls": 1,
+  "total_findings": 0,
+  "urls": [
+    {
+      "url": "https://nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    }
+  ]
+}
