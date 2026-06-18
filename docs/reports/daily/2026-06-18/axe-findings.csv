@@ -67,21 +67,6 @@ https://par.nsf.gov,success,target-size,Touch targets do not have sufficient siz
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
 https://par.nsf.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"">",html,"Fix all of the following:
   Document does not have a main landmark"
-https://seedfund.nsf.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header,"<h1 class=""large-header"" style=""color:#fff;!important"">","WE INVEST UP TO
-$2 MILLION IN
-SEED FUNDING.
-AND TAKE ZERO EQUITY.","Fix any of the following:
-  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
-https://seedfund.nsf.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt,"<span class=""usa-hero-callout-alt"" style=""color:#fff;!important"">","WE INVEST UP TO
-$2 MILLION IN
-SEED FUNDING.","Fix any of the following:
-  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
-https://seedfund.nsf.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-banner > div.usa-grid > p.banner-left > a,"<a href=""/solicitation-proposal/"">",click here,"Fix any of the following:
-  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)
-  The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://seedfund.nsf.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-banner > div.usa-grid > p.banner-left > a,"<a href=""mailto:sbir@nsf.gov"" alt=""sbir@nsf.gov"">",sbir@nsf.gov,"Fix any of the following:
-  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)
-  The link has no styling (such as underline) to distinguish it from the surrounding text"
 https://ncses.nsf.gov,success,aria-required-attr,`[role]`s do not have all required `[aria-*]` attributes,Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).,0,,body.container-fluid > header#main-header > section#gov-banner > div#gov-banner-header,"<div role=""heading"" id=""gov-banner-header"">"," An official website of the United States government
 
 Here’s how you know","Fix any of the following:
@@ -111,6 +96,18 @@ https://ncses.nsf.gov,success,landmark-one-main,Document does not have a main la
   Document does not have a main landmark"
 https://ncses.nsf.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).,0,,div.ncses-links > ul.ncses-link-column > li > a,"<a href=""/about/contact"" aria-label=""N C S E S contact page"" rel=""noopener"" tabindex=""0"">",Contact Us,"Fix any of the following:
   Text inside the element is not included in the accessible name"
+https://seedfund.nsf.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header,"<h1 class=""large-header"" style=""color:#fff;!important"">","WE INVEST UP TO
+$2 MILLION IN
+SEED FUNDING.
+AND TAKE ZERO EQUITY.","Fix any of the following:
+  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+https://seedfund.nsf.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt,"<span class=""usa-hero-callout-alt"" style=""color:#fff;!important"">","WE INVEST UP TO
+$2 MILLION IN
+SEED FUNDING.","Fix any of the following:
+  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+https://seedfund.nsf.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-banner > div.usa-grid > p.banner-left > a,"<a href=""/solicitation-proposal/"">",click here,"Fix any of the following:
+  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)
+  The link has no styling (such as underline) to distinguish it from the surrounding text"
 https://usap.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div#sitetop > div.header > div#quicklinks > a.quicklink,"<a class=""quicklink"" href=""https://www.usap.gov/stationTimes.cfm"">",Station Times,"Fix any of the following:
   Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #6d9ed5, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
 https://usap.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div#sitetop > div.header > div#quicklinks > a.quicklink,"<a class=""quicklink"" href=""https://www.usap.gov/contentHandler.cfm?id=492"">",Contact Us,"Fix any of the following:
@@ -252,4 +249,3 @@ https://polarice.usap.gov,success,target-size,Touch targets do not have sufficie
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 20px instead of at least 24px."
 https://polarice.usap.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"">",html,"Fix all of the following:
   Document does not have a main landmark"
-https://web.intg.research.gov,success,,,,,,,,,
