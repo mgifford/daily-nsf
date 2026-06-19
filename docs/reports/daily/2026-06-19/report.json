@@ -1,20 +1,281 @@
 {
-  "run_date": "2026-06-05",
-  "run_id": "run-2026-06-05-bdf4423812",
-  "generated_at": "2026-06-05T10:35:09.420Z",
-  "total_urls": 13,
-  "total_findings": 32,
-  "urls": [
+  "run_date": "2026-06-19",
+  "run_id": "run-2026-06-19-f25dd11278",
+  "url_limit": 250,
+  "url_counts": {
+    "processed": 12,
+    "succeeded": 12,
+    "failed": 0,
+    "excluded": 0
+  },
+  "aggregate_scores": {
+    "performance": 55,
+    "accessibility": 91.09,
+    "best_practices": 89.36,
+    "seo": 88.36,
+    "pwa": 0
+  },
+  "estimated_impact": {
+    "traffic_window_mode": "daily",
+    "affected_share_percent": 7.8,
+    "categories": [
+      {
+        "name": "WV",
+        "prevalence_rate": 0.01,
+        "estimated_impacted_users": 106.52
+      },
+      {
+        "name": "LV",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 244.99
+      },
+      {
+        "name": "WPC",
+        "prevalence_rate": 0.043,
+        "estimated_impacted_users": 458.02
+      },
+      {
+        "name": "WH",
+        "prevalence_rate": 0.003,
+        "estimated_impacted_users": 31.95
+      },
+      {
+        "name": "LH",
+        "prevalence_rate": 0.034,
+        "estimated_impacted_users": 362.15
+      },
+      {
+        "name": "WS",
+        "prevalence_rate": 0.005,
+        "estimated_impacted_users": 53.26
+      },
+      {
+        "name": "LM",
+        "prevalence_rate": 0.023,
+        "estimated_impacted_users": 244.99
+      },
+      {
+        "name": "LRS",
+        "prevalence_rate": 0.058,
+        "estimated_impacted_users": 617.79
+      },
+      {
+        "name": "LLCLA",
+        "prevalence_rate": 0.049,
+        "estimated_impacted_users": 521.93
+      }
+    ]
+  },
+  "fpc_exclusion": {
+    "total_page_loads": 136558,
+    "scanned_url_count": 12,
+    "categories": {
+      "WV": {
+        "label": "Without Vision",
+        "prevalence_rate": 0.01,
+        "estimated_population": 3400000,
+        "affected_page_loads": 19404,
+        "affected_share_percent": 14.21,
+        "estimated_excluded_users": 194.04,
+        "source_note": "AFB: ~3.4 million Americans with severe visual impairment or blindness"
+      },
+      "LV": {
+        "label": "Limited Vision",
+        "prevalence_rate": 0.024,
+        "estimated_population": 8100000,
+        "affected_page_loads": 21380,
+        "affected_share_percent": 15.66,
+        "estimated_excluded_users": 513.12,
+        "source_note": "ACS 2023 + supplemental estimates: vision difficulty (all severity levels); ~2.4% of U.S. population"
+      },
+      "WPC": {
+        "label": "Without Perception of Color",
+        "prevalence_rate": 0.043,
+        "estimated_population": 14500000,
+        "affected_page_loads": 18742,
+        "affected_share_percent": 13.72,
+        "estimated_excluded_users": 805.91,
+        "source_note": "NIH/NEI: ~8% of males and ~0.5% of females have color vision deficiency"
+      },
+      "WH": {
+        "label": "Without Hearing",
+        "prevalence_rate": 0.003,
+        "estimated_population": 1100000,
+        "affected_page_loads": 19404,
+        "affected_share_percent": 14.21,
+        "estimated_excluded_users": 58.21,
+        "source_note": "NIDCD: ~1.1 million Americans with functional deafness"
+      },
+      "LH": {
+        "label": "Limited Hearing",
+        "prevalence_rate": 0.035,
+        "estimated_population": 11900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD/ACS combined hearing difficulty estimates: ~3.5% of U.S. population"
+      },
+      "WS": {
+        "label": "Without Speech",
+        "prevalence_rate": 0.005,
+        "estimated_population": 1700000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "NIDCD estimate: severe non-verbal or speech-absent population"
+      },
+      "LM": {
+        "label": "Limited Manipulation",
+        "prevalence_rate": 0.022,
+        "estimated_population": 7600000,
+        "affected_page_loads": 19404,
+        "affected_share_percent": 14.21,
+        "estimated_excluded_users": 426.89,
+        "source_note": "ACS 2023 self-care difficulty + dexterity estimates: ~2.2% of U.S. population"
+      },
+      "LRS": {
+        "label": "Limited Reach and Strength",
+        "prevalence_rate": 0.058,
+        "estimated_population": 19600000,
+        "affected_page_loads": 17035,
+        "affected_share_percent": 12.47,
+        "estimated_excluded_users": 988.03,
+        "source_note": "ACS 2023: ambulatory difficulty; ~5.8% of U.S. population"
+      },
+      "LLCLA": {
+        "label": "Limited Language, Cognitive, and Learning Abilities",
+        "prevalence_rate": 0.047,
+        "estimated_population": 15900000,
+        "affected_page_loads": 0,
+        "affected_share_percent": 0,
+        "estimated_excluded_users": 0,
+        "source_note": "ACS 2023/CDC combined cognitive and learning disability estimates: ~4.7% of U.S. population"
+      }
+    },
+    "census_vintage_year": 2023,
+    "census_source": "U.S. Census Bureau, American Community Survey (ACS) 2023 1-Year Estimates, Table B18101",
+    "census_source_url": "https://www.census.gov/topics/health/disability.html"
+  },
+  "performance_impact": {
+    "benchmark_lcp_ms": 2500,
+    "benchmark_page_weight_bytes": 1600000,
+    "url_count_with_timing": 11,
+    "url_count_with_weight": 11,
+    "total_extra_load_time_seconds": 553731,
+    "total_extra_load_time_hours": 153.81,
+    "total_extra_bytes": 116373773003,
+    "total_extra_gigabytes": 116.37
+  },
+  "source_data_date": "2026-06-17",
+  "top_urls": [
     {
       "url": "https://nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 113890,
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5658.523000000001,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "jsDelivr CDN"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14814,
+          "jsDelivr CDN": 1334,
+          "Google Tag Manager": 135894,
+          "Google Analytics": 469583
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 98,
+        "char_count": 1573,
+        "words_per_mb": 40
+      }
     },
     {
       "url": "https://research.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 11628,
       "scan_status": "success",
-      "axe_findings_count": 4,
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 10440.348,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "ForeSee / Verint"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10198,
+          "Google Analytics": 153172
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 22,
+        "accessibility": 88,
+        "best_practices": 73,
+        "seo": 69,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "heading-order",
@@ -158,12 +419,65 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 173,
+        "char_count": 1377,
+        "words_per_mb": 118
+      }
     },
     {
       "url": "https://par.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 3513,
       "scan_status": "success",
-      "axe_findings_count": 5,
+      "failure_reason": null,
+      "findings_count": 5,
+      "severe_findings_count": 4,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5988.839,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "jsDelivr CDN",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Google Fonts": 129477,
+          "Digital Analytics Program": 14814,
+          "jsDelivr CDN": 466259,
+          "Google Analytics": 170999
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 70,
+        "accessibility": 82,
+        "best_practices": 77,
+        "seo": 100,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "aria-hidden-focus",
@@ -257,57 +571,63 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "url": "https://seedfund.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
-              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
-            },
-            {
-              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
-              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
-              "snippet": "<a href=\"/solicitation-proposal/\">",
-              "node_label": "click here",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 95,
+        "char_count": 807,
+        "words_per_mb": 74
+      }
     },
     {
       "url": "https://ncses.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 2179,
       "scan_status": "success",
-      "axe_findings_count": 5,
+      "failure_reason": null,
+      "findings_count": 5,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 30690.427000000003,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 494933,
+          "Digital Analytics Program": 14286
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "Highcharts",
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 47,
+        "accessibility": 88,
+        "best_practices": 100,
+        "seo": 92,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "aria-required-attr",
@@ -407,12 +727,165 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 119,
+        "char_count": 3021,
+        "words_per_mb": 15
+      }
+    },
+    {
+      "url": "https://seedfund.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 2103,
+      "scan_status": "success",
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 4215.1755,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "Google Ads",
+          "YouTube",
+          "cdnjs",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14817,
+          "cdnjs": 12777,
+          "Google Analytics": 342273,
+          "Google Fonts": 85129,
+          "Google Tag Manager": 153445,
+          "YouTube": 3505,
+          "Google Ads": 559
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Modernizr"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 77,
+        "accessibility": 93,
+        "best_practices": 92,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
+              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
+              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
+              "snippet": "<a href=\"/solicitation-proposal/\">",
+              "node_label": "click here",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            }
+          ]
+        }
+      ],
+      "readability_metrics": {
+        "word_count": 952,
+        "char_count": 8695,
+        "words_per_mb": 281
+      }
     },
     {
       "url": "https://usap.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 1080,
       "scan_status": "success",
-      "axe_findings_count": 4,
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 20462.426289999996,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14812,
+          "Google Analytics": 153185
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 56,
+        "accessibility": 90,
+        "best_practices": 92,
+        "seo": 100,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "color-contrast",
@@ -580,18 +1053,121 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 68,
+        "char_count": 446,
+        "words_per_mb": 20
+      }
     },
     {
       "url": "https://www.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 728,
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 4790.232499999998,
+      "detected_technologies": {
+        "cms": "Drupal",
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "jsDelivr CDN"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14812,
+          "jsDelivr CDN": 1334,
+          "Google Tag Manager": 135899,
+          "Google Analytics": 469590
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "jQuery",
+          "Drupal"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 62,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": {
+        "word_count": 98,
+        "char_count": 1573,
+        "words_per_mb": 40
+      }
     },
     {
       "url": "https://ncsesdata.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 459,
       "scan_status": "success",
-      "axe_findings_count": 2,
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 5375.938,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Google Analytics": 609022,
+          "Digital Analytics Program": 14284
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "Angular"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 38,
+        "accessibility": 96,
+        "best_practices": 96,
+        "seo": 82,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "target-size",
@@ -661,18 +1237,100 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": null
     },
     {
       "url": "https://search.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 433,
       "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+      "failure_reason": null,
+      "findings_count": 0,
+      "severe_findings_count": 0,
+      "core_web_vitals_status": "unknown",
+      "lcp_value_ms": null,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [],
+        "third_party_service_sizes": {},
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": null,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      },
+      "axe_findings": [],
+      "readability_metrics": null
     },
     {
       "url": "https://web.acpt.research.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 228,
       "scan_status": "success",
-      "axe_findings_count": 4,
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 2,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 7773.592,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": true,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program",
+          "ForeSee / Verint"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10202,
+          "Google Analytics": 153172
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": false,
+        "errors_in_console_count": 2,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 25,
+        "accessibility": 88,
+        "best_practices": 73,
+        "seo": 85,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "heading-order",
@@ -810,12 +1468,70 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 168,
+        "char_count": 1339,
+        "words_per_mb": 224
+      }
     },
     {
       "url": "https://iucrc.nsf.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 190,
       "scan_status": "success",
-      "axe_findings_count": 4,
+      "failure_reason": null,
+      "findings_count": 4,
+      "severe_findings_count": 3,
+      "core_web_vitals_status": "poor",
+      "lcp_value_ms": 6694.545000000002,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Google Tag Manager",
+          "Digital Analytics Program",
+          "YouTube",
+          "cdnjs",
+          "Google Fonts"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 14287,
+          "cdnjs": 4198,
+          "Google Tag Manager": 133370,
+          "Google Analytics": 327486,
+          "Google Fonts": 60067,
+          "YouTube": 3509
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": [
+          "Bootstrap",
+          "jQuery",
+          "jQuery UI"
+        ]
+      },
+      "lighthouse_scores": {
+        "performance": 54,
+        "accessibility": 86,
+        "best_practices": 96,
+        "seo": 77,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "aria-required-attr",
@@ -887,12 +1603,58 @@
             }
           ]
         }
-      ]
+      ],
+      "readability_metrics": {
+        "word_count": 86,
+        "char_count": 523,
+        "words_per_mb": 14
+      }
     },
     {
       "url": "https://polarice.usap.gov",
+      "organization_name": "National Science Foundation",
+      "domain_type": "Federal - Executive",
+      "page_load_count": 127,
       "scan_status": "success",
-      "axe_findings_count": 2,
+      "failure_reason": null,
+      "findings_count": 2,
+      "severe_findings_count": 1,
+      "core_web_vitals_status": "good",
+      "lcp_value_ms": 1860.0990000000002,
+      "detected_technologies": {
+        "cms": null,
+        "uswds": {
+          "detected": false,
+          "version": null
+        },
+        "third_party_services": [
+          "Google Analytics",
+          "Digital Analytics Program"
+        ],
+        "third_party_service_sizes": {
+          "Digital Analytics Program": 10198,
+          "Google Analytics": 153172
+        },
+        "overlays": []
+      },
+      "code_quality_summary": {
+        "deprecated_apis_passing": null,
+        "deprecated_apis_count": 0,
+        "errors_in_console_passing": true,
+        "errors_in_console_count": 0,
+        "no_document_write_passing": null,
+        "vulnerable_libraries_passing": null,
+        "vulnerable_libraries_count": 0,
+        "vulnerable_library_names": [],
+        "js_libraries": []
+      },
+      "lighthouse_scores": {
+        "performance": 99,
+        "accessibility": 91,
+        "best_practices": 92,
+        "seo": 91,
+        "pwa": 0
+      },
       "axe_findings": [
         {
           "id": "target-size",
@@ -932,13 +1694,596 @@
             }
           ]
         }
+      ],
+      "readability_metrics": {
+        "word_count": 260,
+        "char_count": 1751,
+        "words_per_mb": 929
+      }
+    }
+  ],
+  "tech_summary": {
+    "cms_counts": {
+      "Drupal": 2
+    },
+    "cms_urls": {
+      "Drupal": [
+        "https://nsf.gov",
+        "https://www.nsf.gov"
       ]
     },
-    {
-      "url": "https://web.intg.research.gov",
-      "scan_status": "success",
-      "axe_findings_count": 0,
-      "axe_findings": []
+    "uswds_count": 5,
+    "uswds_versions": [],
+    "uswds_version_urls": {
+      "": [
+        "https://nsf.gov",
+        "https://research.gov",
+        "https://seedfund.nsf.gov",
+        "https://www.nsf.gov",
+        "https://web.acpt.research.gov"
+      ]
+    },
+    "total_scanned": 12,
+    "third_party_service_counts": {
+      "Google Analytics": 11,
+      "Google Tag Manager": 4,
+      "Digital Analytics Program": 11,
+      "jsDelivr CDN": 3,
+      "ForeSee / Verint": 2,
+      "Google Fonts": 3,
+      "Google Ads": 1,
+      "YouTube": 2,
+      "cdnjs": 2
+    },
+    "third_party_service_urls": {
+      "Google Analytics": [
+        "https://nsf.gov",
+        "https://research.gov",
+        "https://par.nsf.gov",
+        "https://ncses.nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://usap.gov",
+        "https://www.nsf.gov",
+        "https://ncsesdata.nsf.gov",
+        "https://web.acpt.research.gov",
+        "https://iucrc.nsf.gov",
+        "https://polarice.usap.gov"
+      ],
+      "Google Tag Manager": [
+        "https://nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://www.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "Digital Analytics Program": [
+        "https://nsf.gov",
+        "https://research.gov",
+        "https://par.nsf.gov",
+        "https://ncses.nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://usap.gov",
+        "https://www.nsf.gov",
+        "https://ncsesdata.nsf.gov",
+        "https://web.acpt.research.gov",
+        "https://iucrc.nsf.gov",
+        "https://polarice.usap.gov"
+      ],
+      "jsDelivr CDN": [
+        "https://nsf.gov",
+        "https://par.nsf.gov",
+        "https://www.nsf.gov"
+      ],
+      "ForeSee / Verint": [
+        "https://research.gov",
+        "https://web.acpt.research.gov"
+      ],
+      "Google Fonts": [
+        "https://par.nsf.gov",
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "Google Ads": [
+        "https://seedfund.nsf.gov"
+      ],
+      "YouTube": [
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ],
+      "cdnjs": [
+        "https://seedfund.nsf.gov",
+        "https://iucrc.nsf.gov"
+      ]
+    },
+    "third_party_service_total_bytes": {
+      "Digital Analytics Program": 147524,
+      "jsDelivr CDN": 468927,
+      "Google Tag Manager": 558608,
+      "Google Analytics": 3496587,
+      "Google Fonts": 274673,
+      "cdnjs": 16975,
+      "YouTube": 7014,
+      "Google Ads": 559
+    },
+    "third_party_service_page_load_totals": {
+      "Google Analytics": 136125,
+      "Google Tag Manager": 116911,
+      "Digital Analytics Program": 136125,
+      "jsDelivr CDN": 118131,
+      "ForeSee / Verint": 11856,
+      "Google Fonts": 5806,
+      "Google Ads": 2103,
+      "YouTube": 2293,
+      "cdnjs": 2293
+    },
+    "overlay_counts": {},
+    "overlay_urls": {},
+    "accessibility_statement_summary": {
+      "domains_checked": 12,
+      "domains_with_statement": 8,
+      "statement_rate_percent": 67,
+      "domains_without_statement": [
+        "ncsesdata.nsf.gov",
+        "par.nsf.gov",
+        "polarice.usap.gov",
+        "web.acpt.research.gov"
+      ],
+      "statement_urls": [
+        "https://iucrc.nsf.gov/accessibility",
+        "https://ncses.nsf.gov/accessibility",
+        "https://nsf.gov/accessibility",
+        "https://research.gov/accessibility",
+        "https://search.nsf.gov/accessibility",
+        "https://seedfund.nsf.gov/accessibility",
+        "https://usap.gov/accessibility",
+        "https://www.nsf.gov/accessibility"
+      ]
+    },
+    "required_links_summary": {
+      "domains_checked": 12,
+      "by_type": {
+        "privacy": {
+          "domains_with_link": 7,
+          "rate_percent": 58,
+          "missing_domains": [
+            "ncses.nsf.gov",
+            "ncsesdata.nsf.gov",
+            "par.nsf.gov",
+            "polarice.usap.gov",
+            "web.acpt.research.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/privacy",
+            "https://nsf.gov/privacy",
+            "https://research.gov/privacy",
+            "https://search.nsf.gov/privacy",
+            "https://seedfund.nsf.gov/privacy",
+            "https://usap.gov/privacy",
+            "https://www.nsf.gov/privacy"
+          ]
+        },
+        "contact": {
+          "domains_with_link": 9,
+          "rate_percent": 75,
+          "missing_domains": [
+            "ncsesdata.nsf.gov",
+            "polarice.usap.gov",
+            "web.acpt.research.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/contact",
+            "https://ncses.nsf.gov/contact",
+            "https://nsf.gov/contact",
+            "https://par.nsf.gov/contact",
+            "https://research.gov/contact",
+            "https://search.nsf.gov/contact",
+            "https://seedfund.nsf.gov/contact",
+            "https://usap.gov/contact",
+            "https://www.nsf.gov/contact-us"
+          ]
+        },
+        "foia": {
+          "domains_with_link": 7,
+          "rate_percent": 58,
+          "missing_domains": [
+            "ncses.nsf.gov",
+            "ncsesdata.nsf.gov",
+            "par.nsf.gov",
+            "polarice.usap.gov",
+            "web.acpt.research.gov"
+          ],
+          "link_urls": [
+            "https://iucrc.nsf.gov/foia",
+            "https://nsf.gov/foia",
+            "https://research.gov/foia",
+            "https://search.nsf.gov/foia",
+            "https://seedfund.nsf.gov/foia",
+            "https://usap.gov/foia",
+            "https://www.nsf.gov/foia"
+          ]
+        }
+      },
+      "fully_compliant_domains": 7,
+      "fully_compliant_rate_percent": 58
     }
+  },
+  "code_quality_summary": {
+    "total_scanned": 12,
+    "urls_with_deprecated_apis": 0,
+    "urls_with_console_errors": 4,
+    "urls_with_document_write": 0,
+    "urls_with_vulnerable_libraries": 0,
+    "js_library_counts": {
+      "jQuery": 10,
+      "Drupal": 2,
+      "Bootstrap": 6,
+      "Highcharts": 1,
+      "jQuery UI": 3,
+      "Modernizr": 1,
+      "Angular": 1
+    },
+    "vulnerable_library_counts": {},
+    "audit_urls": {
+      "deprecated_apis": [],
+      "console_errors": [
+        "https://research.gov",
+        "https://seedfund.nsf.gov",
+        "https://ncsesdata.nsf.gov",
+        "https://web.acpt.research.gov"
+      ],
+      "document_write": [],
+      "vulnerable_libraries": []
+    }
+  },
+  "readability_summary": {
+    "url_count_with_metrics": 10,
+    "url_count_low_density": 7,
+    "mean_word_count": 212,
+    "mean_words_per_mb": 176,
+    "low_density_urls": [
+      "https://nsf.gov",
+      "https://research.gov",
+      "https://par.nsf.gov",
+      "https://ncses.nsf.gov",
+      "https://usap.gov",
+      "https://www.nsf.gov",
+      "https://iucrc.nsf.gov"
+    ]
+  },
+  "trend_window_days": 31,
+  "history_series": [
+    {
+      "date": "2026-05-20",
+      "aggregate_scores": {
+        "performance": 51.5,
+        "accessibility": 92,
+        "best_practices": 90.6,
+        "seo": 88,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "aggregate_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "aggregate_scores": {
+        "performance": 61,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "aggregate_scores": {
+        "performance": 53,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "aggregate_scores": {
+        "performance": 56,
+        "accessibility": 91.45,
+        "best_practices": 89.36,
+        "seo": 89.09,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "aggregate_scores": {
+        "performance": 52.5,
+        "accessibility": 91.5,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "aggregate_scores": {
+        "performance": 49.6,
+        "accessibility": 91.5,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "aggregate_scores": {
+        "performance": 58,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "aggregate_scores": {
+        "performance": 52.18,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 89.09,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "aggregate_scores": {
+        "performance": 54,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "aggregate_scores": {
+        "performance": 58.91,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 89.09,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "aggregate_scores": {
+        "performance": 52.3,
+        "accessibility": 91.1,
+        "best_practices": 89.1,
+        "seo": 88.1,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-01",
+      "aggregate_scores": {
+        "performance": 50.9,
+        "accessibility": 91.1,
+        "best_practices": 89.1,
+        "seo": 88.9,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-02",
+      "aggregate_scores": {
+        "performance": 58,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "aggregate_scores": {
+        "performance": 53,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "aggregate_scores": {
+        "performance": 53,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 89.09,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-05",
+      "aggregate_scores": {
+        "performance": 56.45,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 88.36,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "aggregate_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "aggregate_scores": {
+        "performance": 51,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "aggregate_scores": {
+        "performance": 49.36,
+        "accessibility": 91.91,
+        "best_practices": 89.73,
+        "seo": 88.45,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "aggregate_scores": {
+        "performance": 53.82,
+        "accessibility": 91.91,
+        "best_practices": 89.73,
+        "seo": 88.45,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "aggregate_scores": {
+        "performance": 55,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "aggregate_scores": {
+        "performance": 52,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "aggregate_scores": {
+        "performance": 54.55,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 88.36,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "aggregate_scores": {
+        "performance": 58,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 88.36,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "aggregate_scores": {
+        "performance": 53.45,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 88.36,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "aggregate_scores": {
+        "performance": 56,
+        "accessibility": 100,
+        "best_practices": 96,
+        "seo": 92,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "aggregate_scores": {
+        "performance": 57.17,
+        "accessibility": 91,
+        "best_practices": 89.58,
+        "seo": 88.67,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "aggregate_scores": {
+        "performance": 57.83,
+        "accessibility": 91,
+        "best_practices": 89.58,
+        "seo": 88.67,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-18",
+      "aggregate_scores": {
+        "performance": 54,
+        "accessibility": 91.09,
+        "best_practices": 89.36,
+        "seo": 88.36,
+        "pwa": 0
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "aggregate_scores": {
+        "performance": 0,
+        "accessibility": 0,
+        "best_practices": 0,
+        "seo": 0,
+        "pwa": 0
+      }
+    }
+  ],
+  "generated_at": "2026-06-19T10:53:12.812Z",
+  "report_status": "success",
+  "slow_risk_summary": {
+    "successful_url_count": 12,
+    "slow_risk_url_count": 10,
+    "successful_page_load_count": 136558,
+    "slow_risk_page_load_count": 135998,
+    "slow_risk_traffic_share_percent": 99.59
+  },
+  "warning_events": [],
+  "scan_diagnostics": {
+    "total_urls": 12,
+    "success_count": 12,
+    "failed_count": 0,
+    "excluded_count": 0,
+    "timeout_count": 0,
+    "retry_count": 0,
+    "failure_reasons": {}
+  },
+  "scan_mode": "live",
+  "scanner_notes": [
+    "Lighthouse scans are live per URL.",
+    "ScanGov integration currently uses placeholder findings and will be wired to a live backend next."
   ]
 }
