@@ -1,7 +1,7 @@
 {
-  "run_date": "2026-06-12",
-  "run_id": "run-2026-06-12-f82793f02b",
-  "generated_at": "2026-06-12T10:43:19.740Z",
+  "run_date": "2026-06-26",
+  "run_id": "run-2026-06-26-df768132ce",
+  "generated_at": "2026-06-26T10:24:15.474Z",
   "total_urls": 12,
   "total_findings": 32,
   "urls": [
@@ -206,6 +206,12 @@
           "tags": [],
           "items": [
             {
+              "selector": "tbody > tr > td#message > a",
+              "snippet": "<a href=\"https://www.nsf.gov/awards/terms-conditions\">",
+              "node_label": "award terms and conditions",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+            },
+            {
               "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
               "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
               "node_label": "Public Access",
@@ -260,51 +266,6 @@
       ]
     },
     {
-      "url": "https://seedfund.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "color-contrast",
-          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
-              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
-            },
-            {
-              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
-              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
-              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
-              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
-              "snippet": "<a href=\"/solicitation-proposal/\">",
-              "node_label": "click here",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "url": "https://ncses.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 5,
@@ -336,7 +297,7 @@
             {
               "selector": "div.row > div.col > a > h5.card-title",
               "snippet": "<h5 class=\"card-title\">",
-              "node_label": "Federal R&D Obligations Increased 4.4% in FY 2024; Most Agencies Estimate Decli…",
+              "node_label": "The State of U.S. Science and Engineering 2026",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             },
             {
@@ -404,6 +365,51 @@
               "snippet": "<a href=\"/about/contact\" aria-label=\"N C S E S contact page\" rel=\"noopener\" tabindex=\"0\">",
               "node_label": "Contact Us",
               "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://seedfund.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "color-contrast",
+          "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "section.usa-hero > div.usa-grid > div.usa-width-two-thirds > h1.large-header",
+              "snippet": "<h1 class=\"large-header\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.\nAND TAKE ZERO EQUITY.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "selector": "div.usa-grid > div.usa-width-two-thirds > h1.large-header > span.usa-hero-callout-alt",
+              "snippet": "<span class=\"usa-hero-callout-alt\" style=\"color:#fff;!important\">",
+              "node_label": "WE INVEST UP TO\n$2 MILLION IN\nSEED FUNDING.",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.04 (foreground color: #ffffff, background color: #f5fbfc, font size: 27.0pt (36px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "title": "Links rely on color to be distinguishable.",
+          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.usa-banner > div.usa-grid > p.banner-left > a",
+              "snippet": "<a href=\"/solicitation-proposal/\">",
+              "node_label": "click here",
+              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
             }
           ]
         }
@@ -583,13 +589,13 @@
       ]
     },
     {
-      "url": "https://search.nsf.gov",
+      "url": "https://www.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
     },
     {
-      "url": "https://www.nsf.gov",
+      "url": "https://search.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
