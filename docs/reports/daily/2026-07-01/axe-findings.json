@@ -1,9 +1,9 @@
 {
-  "run_date": "2026-06-17",
-  "run_id": "run-2026-06-17-6588364c91",
-  "generated_at": "2026-06-17T10:55:07.911Z",
+  "run_date": "2026-07-01",
+  "run_id": "run-2026-07-01-a0e7218564",
+  "generated_at": "2026-07-01T10:32:38.657Z",
   "total_urls": 13,
-  "total_findings": 34,
+  "total_findings": 28,
   "urls": [
     {
       "url": "https://nsf.gov",
@@ -56,12 +56,6 @@
           "impact": "serious",
           "tags": [],
           "items": [
-            {
-              "selector": "div.col-sm-2 > ul > li > a",
-              "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Account Management footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutacctmgmt\">",
-              "node_label": "Account Management",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (116.8px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            },
             {
               "selector": "div.col-sm-2 > ul > li > a",
               "snippet": "<a onclick=\"dcsMultiTrack('DCS.dcsuri', '/Proposal Status footer', 'WT.dl','100');\" href=\"https://www.research.gov/research-web/content/aboutproposalstatus\">",
@@ -163,24 +157,8 @@
     {
       "url": "https://par.nsf.gov",
       "scan_status": "success",
-      "axe_findings_count": 5,
+      "axe_findings_count": 1,
       "axe_findings": [
-        {
-          "id": "aria-hidden-focus",
-          "title": "`[aria-hidden=\"true\"]` elements contain focusable descendents",
-          "description": "Focusable descendents within an `[aria-hidden=\"true\"]` element prevent those interactive elements from being available to users of assistive technologies like screen readers. [Learn how `aria-hidden` affects focusable elements](https://dequeuniversity.com/rules/axe/4.11/aria-hidden-focus).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.input-group > span.formfield-clear > div > button.close",
-              "snippet": "<button type=\"button\" class=\"close\" aria-hidden=\"true\">",
-              "node_label": "×",
-              "explanation": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
-            }
-          ]
-        },
         {
           "id": "color-contrast",
           "title": "Background and foreground colors do not have a sufficient contrast ratio.",
@@ -194,66 +172,6 @@
               "snippet": "<label for=\"how-you-know\">",
               "node_label": "Here's how you know ",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #69beaa, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
-            }
-          ]
-        },
-        {
-          "id": "link-in-text-block",
-          "title": "Links rely on color to be distinguishable.",
-          "description": "Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#public-access-page-link",
-              "snippet": "<a id=\"public-access-page-link\" href=\"https://www.nsf.gov/news/special_reports/public_access/\" target=\"_blank\" rel=\"noopener noreferrer\">",
-              "node_label": "Public Access",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.row > div.col-lg-12 > p > a#frequently-asked-questions-link",
-              "snippet": "<a href=\"https://par.nsf.gov/faq\" id=\"frequently-asked-questions-link\">",
-              "node_label": "Frequently Asked Questions",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            },
-            {
-              "selector": "div.col-lg-12 > p > span#send-feedback-link > a",
-              "snippet": "<a itemprop=\"\" href=\"mailto:publicaccess@nsf.gov?subject=Feedback\">",
-              "node_label": "link",
-              "explanation": "Fix any of the following:\n  The link has insufficient color contrast of 2.33:1 with the surrounding text. (Minimum contrast is 3:1, link text: #00748d, surrounding text: #333333)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
-            }
-          ]
-        },
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div > form#index_search > div#advsearch_btn > a#adv_toggle",
-              "snippet": "<a href=\"#advfilters\" data-target=\"#advfilters\" data-toggle=\"modal\" id=\"adv_toggle\">",
-              "node_label": "+ Advanced Search",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (104.4px by 14px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 16px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html",
-              "snippet": "<html lang=\"en\">",
-              "node_label": "html",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
           ]
         }
@@ -336,7 +254,7 @@
             {
               "selector": "div.row > div.col > a > h5.card-title",
               "snippet": "<h5 class=\"card-title\">",
-              "node_label": "Federal R&D Obligations Increased 4.4% in FY 2024; Most Agencies Estimate Decli…",
+              "node_label": "The State of U.S. Science and Engineering 2026",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             },
             {
@@ -495,7 +413,7 @@
             {
               "selector": "tbody > tr > td > h4",
               "snippet": "<h4>",
-              "node_label": "NSF releases final South Pole Station Master Plan",
+              "node_label": "Upcoming OPP career opportunities",
               "explanation": "Fix any of the following:\n  Heading order invalid"
             }
           ]
@@ -589,7 +507,88 @@
       "axe_findings": []
     },
     {
+      "url": "https://ncsesdata.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 2,
+      "axe_findings": [
+        {
+          "id": "target-size",
+          "title": "Touch targets do not have sufficient size or spacing.",
+          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-website-policies",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-website-policies\" href=\"https://www.nsf.gov/policies/\" class=\"text-nowrap\">",
+              "node_label": "Website Policies",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (114.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-budget-and-performance",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-budget-and-performance\" href=\"https://www.nsf.gov/about/performance/\" class=\"text-nowrap\">",
+              "node_label": "Budget and Performance",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (167.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-inspector-general",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-inspector-general\" href=\"https://www.nsf.gov/oig/\" class=\"text-nowrap\">",
+              "node_label": "Inspector General",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (123.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-foia",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-foia\" href=\"https://www.nsf.gov/policies/foia.jsp\" class=\"text-nowrap\">",
+              "node_label": "FOIA",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (44.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-no-fear-act",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-no-fear-act\" href=\"https://www.nsf.gov/od/oecr/nofearact_notice.jsp\" class=\"text-nowrap\">",
+              "node_label": "No FEAR Act",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (94.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-accessibility",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-accessibility\" href=\"https://ncses.nsf.gov/accessibility\" class=\"text-nowrap\">",
+              "node_label": "Accessibility",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (88.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            },
+            {
+              "selector": "div.d-flex > div > div.text-wrap > a#footer-research-gov",
+              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-research-gov\" href=\"https://www.research.gov/\" class=\"text-nowrap\">",
+              "node_label": "Research.gov",
+              "explanation": "Fix any of the following:\n  Target has insufficient size (98.4px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
+            }
+          ]
+        },
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
+          "score": 0,
+          "impact": "serious",
+          "tags": [],
+          "items": [
+            {
+              "selector": "header > nav.header > div.navbar > button.navbar-toggler",
+              "snippet": "<button _ngcontent-ng-c713153184=\"\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler collapsed btn-menu\">",
+              "node_label": "Menu",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "url": "https://search.nsf.gov",
+      "scan_status": "success",
+      "axe_findings_count": 0,
+      "axe_findings": []
+    },
+    {
+      "url": "https://new.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 0,
       "axe_findings": []
@@ -738,81 +737,6 @@
       ]
     },
     {
-      "url": "https://ncsesdata.nsf.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "target-size",
-          "title": "Touch targets do not have sufficient size or spacing.",
-          "description": "Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-website-policies",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-website-policies\" href=\"https://www.nsf.gov/policies/\" class=\"text-nowrap\">",
-              "node_label": "Website Policies",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (114.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-budget-and-performance",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-budget-and-performance\" href=\"https://www.nsf.gov/about/performance/\" class=\"text-nowrap\">",
-              "node_label": "Budget and Performance",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (167.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 22.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-inspector-general",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-inspector-general\" href=\"https://www.nsf.gov/oig/\" class=\"text-nowrap\">",
-              "node_label": "Inspector General",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (123.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 19px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-foia",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-foia\" href=\"https://www.nsf.gov/policies/foia.jsp\" class=\"text-nowrap\">",
-              "node_label": "FOIA",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (44.7px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-no-fear-act",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-no-fear-act\" href=\"https://www.nsf.gov/od/oecr/nofearact_notice.jsp\" class=\"text-nowrap\">",
-              "node_label": "No FEAR Act",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (94.5px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-accessibility",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-accessibility\" href=\"https://ncses.nsf.gov/accessibility\" class=\"text-nowrap\">",
-              "node_label": "Accessibility",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (88.3px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
-            },
-            {
-              "selector": "div.d-flex > div > div.text-wrap > a#footer-research-gov",
-              "snippet": "<a _ngcontent-ng-c1209710305=\"\" id=\"footer-research-gov\" href=\"https://www.research.gov/\" class=\"text-nowrap\">",
-              "node_label": "Research.gov",
-              "explanation": "Fix any of the following:\n  Target has insufficient size (98.4px by 16px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18.2px instead of at least 24px."
-            }
-          ]
-        },
-        {
-          "id": "label-content-name-mismatch",
-          "title": "Elements with visible text labels do not have matching accessible names.",
-          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "header > nav.header > div.navbar > button.navbar-toggler",
-              "snippet": "<button _ngcontent-ng-c713153184=\"\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarToggler\" aria-controls=\"navbarToggler\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler collapsed btn-menu\">",
-              "node_label": "Menu",
-              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "url": "https://iucrc.nsf.gov",
       "scan_status": "success",
       "axe_findings_count": 4,
@@ -927,99 +851,6 @@
             {
               "selector": "html",
               "snippet": "<html lang=\"en\">",
-              "node_label": "html",
-              "explanation": "Fix all of the following:\n  Document does not have a main landmark"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "url": "https://sac.gov",
-      "scan_status": "success",
-      "axe_findings_count": 2,
-      "axe_findings": [
-        {
-          "id": "tabindex",
-          "title": "Some elements have a `[tabindex]` value greater than 0",
-          "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more about the `tabindex` attribute](https://dequeuniversity.com/rules/axe/4.11/tabindex).",
-          "score": 0,
-          "impact": "serious",
-          "tags": [],
-          "items": [
-            {
-              "selector": "body > a#skip",
-              "snippet": "<a tabindex=\"10\" href=\"#content\" accesskey=\"1\" id=\"skip\">",
-              "node_label": "Skip to Content",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#main-area > div#header > div#logo > a",
-              "snippet": "<a href=\"./\" tabindex=\"5\">",
-              "node_label": "Small Agency Council",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.home > a.active",
-              "snippet": "<a href=\"./\" tabindex=\"20\" class=\"active\">",
-              "node_label": "Home",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.about > a",
-              "snippet": "<a href=\"./about/\" tabindex=\"30\">",
-              "node_label": "About",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.executive-committee > a",
-              "snippet": "<a href=\"./committees/executive.htm\" tabindex=\"40\">",
-              "node_label": "Executive Committee",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.committees > a",
-              "snippet": "<a href=\"./committees/\" tabindex=\"50\">",
-              "node_label": "Committees",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.meetings > a",
-              "snippet": "<a href=\"./meetings/\" tabindex=\"60\">",
-              "node_label": "Meetings",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.links > a",
-              "snippet": "<a href=\"./links/\" tabindex=\"70\">",
-              "node_label": "Links",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div#mainNav > ul > li.contact > a",
-              "snippet": "<a href=\"./contact/\" tabindex=\"80\">",
-              "node_label": "Contact",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            },
-            {
-              "selector": "div.promoAlt > div.txt > p.link > a",
-              "snippet": "<a href=\"./about/\" tabindex=\"85\">",
-              "node_label": "LEARN MORE ABOUT THE COUNCIL",
-              "explanation": "Fix any of the following:\n  Element has a tabindex greater than 0"
-            }
-          ]
-        },
-        {
-          "id": "landmark-one-main",
-          "title": "Document does not have a main landmark.",
-          "description": "One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).",
-          "score": 0,
-          "impact": "moderate",
-          "tags": [],
-          "items": [
-            {
-              "selector": "html",
-              "snippet": "<html xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\">",
               "node_label": "html",
               "explanation": "Fix all of the following:\n  Document does not have a main landmark"
             }
