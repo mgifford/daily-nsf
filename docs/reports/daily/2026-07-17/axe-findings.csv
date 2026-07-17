@@ -60,35 +60,6 @@ SEED FUNDING.","Fix any of the following:
 https://seedfund.nsf.gov,success,link-in-text-block,Links rely on color to be distinguishable.,Low-contrast text is difficult or impossible for many users to read. Link text that is discernible improves the experience for users with low vision. [Learn how to make links distinguishable](https://dequeuniversity.com/rules/axe/4.11/link-in-text-block).,0,,div.usa-banner > div.usa-grid > p.banner-left > a,"<a href=""/solicitation-proposal/"">",click here,"Fix any of the following:
   The link has insufficient color contrast of 1.14:1 with the surrounding text. (Minimum contrast is 3:1, link text: #002277, surrounding text: #212121)
   The link has no styling (such as underline) to distinguish it from the surrounding text"
-https://ncses.nsf.gov,success,aria-required-attr,`[role]`s do not have all required `[aria-*]` attributes,Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).,0,,body.container-fluid > header#main-header > section#gov-banner > div#gov-banner-header,"<div role=""heading"" id=""gov-banner-header"">"," An official website of the United States government
-
-Here’s how you know","Fix any of the following:
-  Required ARIA attribute not present: aria-level"
-https://ncses.nsf.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div.row > div.col > a > h5.card-title,"<h5 class=""card-title"">",The State of U.S. Science and Engineering 2026,"Fix any of the following:
-  Heading order invalid"
-https://ncses.nsf.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div.container > div.row > div.areas-of-interest > h4,<h4>,Explore Our Areas of Interest,"Fix any of the following:
-  Heading order invalid"
-https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""Our data and analysis"" class=""ncses-link-column"">","OUR DATA AND ANALYSIS
-Areas of Interest
-Corrections
-Explore Data
-Schedule of Re…","Fix all of the following:
-  List element has direct children that are not allowed: #text"
-https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""About"" class=""ncses-link-column"">","ABOUT
-About NCSES
-Quality & Transparency
-What's New From NCSES","Fix all of the following:
-  List element has direct children that are not allowed: #text"
-https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""Help"" class=""ncses-link-column"">","HELP
-Contact Us
-Frequently Asked Questions
-Glossary
-NCSES Knowledge Base","Fix all of the following:
-  List element has direct children that are not allowed: #text"
-https://ncses.nsf.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"">",html,"Fix all of the following:
-  Document does not have a main landmark"
-https://ncses.nsf.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).,0,,div.ncses-links > ul.ncses-link-column > li > a,"<a href=""/about/contact"" aria-label=""N C S E S contact page"" rel=""noopener"" tabindex=""0"">",Contact Us,"Fix any of the following:
-  Text inside the element is not included in the accessible name"
 https://usap.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div#sitetop > div.header > div#quicklinks > a.quicklink,"<a class=""quicklink"" href=""https://www.usap.gov/stationTimes.cfm"">",Station Times,"Fix any of the following:
   Element has insufficient color contrast of 2.79 (foreground color: #ffffff, background color: #6d9ed5, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
 https://usap.gov,success,color-contrast,Background and foreground colors do not have a sufficient contrast ratio.,Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.11/color-contrast).,0,,div#sitetop > div.header > div#quicklinks > a.quicklink,"<a class=""quicklink"" href=""https://www.usap.gov/contentHandler.cfm?id=492"">",Contact Us,"Fix any of the following:
@@ -140,6 +111,35 @@ https://usap.gov,success,target-size,Touch targets do not have sufficient size o
   Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 14.4px instead of at least 24px."
 https://usap.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"">",html,"Fix all of the following:
   Document does not have a main landmark"
+https://ncses.nsf.gov,success,aria-required-attr,`[role]`s do not have all required `[aria-*]` attributes,Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more about roles and required attributes](https://dequeuniversity.com/rules/axe/4.11/aria-required-attr).,0,,body.container-fluid > header#main-header > section#gov-banner > div#gov-banner-header,"<div role=""heading"" id=""gov-banner-header"">"," An official website of the United States government
+
+Here’s how you know","Fix any of the following:
+  Required ARIA attribute not present: aria-level"
+https://ncses.nsf.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div.row > div.col > a > h5.card-title,"<h5 class=""card-title"">",The State of U.S. Science and Engineering 2026,"Fix any of the following:
+  Heading order invalid"
+https://ncses.nsf.gov,success,heading-order,Heading elements are not in a sequentially-descending order,"Properly ordered headings that do not skip levels convey the semantic structure of the page, making it easier to navigate and understand when using assistive technologies. [Learn more about heading order](https://dequeuniversity.com/rules/axe/4.11/heading-order).",0,,div.container > div.row > div.areas-of-interest > h4,<h4>,Explore Our Areas of Interest,"Fix any of the following:
+  Heading order invalid"
+https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""Our data and analysis"" class=""ncses-link-column"">","OUR DATA AND ANALYSIS
+Areas of Interest
+Corrections
+Explore Data
+Schedule of Re…","Fix all of the following:
+  List element has direct children that are not allowed: #text"
+https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""About"" class=""ncses-link-column"">","ABOUT
+About NCSES
+Quality & Transparency
+What's New From NCSES","Fix all of the following:
+  List element has direct children that are not allowed: #text"
+https://ncses.nsf.gov,success,list,Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).,Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more about proper list structure](https://dequeuniversity.com/rules/axe/4.11/list).,0,,footer > div.footer-nav-links > div.ncses-links > ul.ncses-link-column,"<ul aria-label=""Help"" class=""ncses-link-column"">","HELP
+Contact Us
+Frequently Asked Questions
+Glossary
+NCSES Knowledge Base","Fix all of the following:
+  List element has direct children that are not allowed: #text"
+https://ncses.nsf.gov,success,landmark-one-main,Document does not have a main landmark.,One main landmark helps screen reader users navigate a web page. [Learn more about landmarks](https://dequeuniversity.com/rules/axe/4.11/landmark-one-main).,0,,html,"<html lang=""en"">",html,"Fix all of the following:
+  Document does not have a main landmark"
+https://ncses.nsf.gov,success,label-content-name-mismatch,Elements with visible text labels do not have matching accessible names.,Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.11/label-content-name-mismatch).,0,,div.ncses-links > ul.ncses-link-column > li > a,"<a href=""/about/contact"" aria-label=""N C S E S contact page"" rel=""noopener"" tabindex=""0"">",Contact Us,"Fix any of the following:
+  Text inside the element is not included in the accessible name"
 https://www.nsf.gov,success,,,,,,,,,
 https://search.nsf.gov,success,,,,,,,,,
 https://ncsesdata.nsf.gov,success,target-size,Touch targets do not have sufficient size or spacing.,Touch targets with sufficient size and spacing help users who may have difficulty targeting small controls to activate the targets. [Learn more about touch targets](https://dequeuniversity.com/rules/axe/4.11/target-size).,0,,div.d-flex > div > div.text-wrap > a#footer-website-policies,"<a _ngcontent-ng-c1209710305="""" id=""footer-website-policies"" href=""https://www.nsf.gov/policies/"" class=""text-nowrap"">",Website Policies,"Fix any of the following:
